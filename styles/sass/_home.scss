@@ -1,0 +1,84 @@
+$white: #F6F6F6;
+$brownGrey: #F2F2F2;
+$textBlack: #333333;
+$black: #2E2E2E;
+$black2: #252525;
+$green: #64A604;
+$green2: #DDED9A;
+
+// header styling
+
+header.home {
+    height: 95vh;
+    background-image: url(./assets/home-1.jpeg);
+    background-size:cover;
+    font-family: "Raleway", sans-serif;
+}
+
+.headWrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #2E2E2E;;
+    font-size: 46px;
+    font-weight: bolder;
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    max-width: 25%;
+}
+
+nav {
+    width: 75%;
+    margin-top: 5px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: $black;
+}
+
+nav span {
+    color: $green;
+}
+
+div.shopping {
+    position: relative;
+}
+
+.shopping p {
+    font-size: 8px;
+    position: absolute;
+    bottom: -12px;
+    right: -5px;
+    border-radius: 50%;
+    color: $white;
+    background-color: $green;
+    padding: 2px 5px;
+}
+
+section {
+    display: flex;
+}
+
+
+
+
+
+
+
+
