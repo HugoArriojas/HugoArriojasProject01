@@ -235,6 +235,10 @@ html {
   overflow: hidden;
 }
 
+span {
+  color: #64A604;
+}
+
 header.home {
   height: 95vh;
   background-image: url(./assets/home-1.jpeg);
@@ -266,7 +270,6 @@ nav {
   width: 60%;
   margin-top: 15px;
 }
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,25 +279,16 @@ nav ul {
           justify-content: space-between;
   font-size: 14px;
   font-weight: bold;
-}
-
-ul {
   list-style-type: none;
 }
-
 nav a {
   text-decoration: none;
   color: #2E2E2E;
 }
 
-nav span {
-  color: #64A604;
-}
-
-li.shopping {
+.shopping {
   position: relative;
 }
-
 .shopping p {
   font-size: 8px;
   position: absolute;
@@ -385,6 +379,11 @@ button {
      object-fit: cover;
 }
 
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
 .dishesContent {
   max-width: 50%;
   background-color: #F2F2F2;
@@ -414,8 +413,6 @@ button {
   display: flex;
 }
 .dishesContent h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
   margin: 0;
 }
 .dishesContent p {
@@ -468,7 +465,101 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto;
 }
-
 .gallery img {
   width: 100%;
+}
+
+.testimonial {
+  background-color: #DDED9A;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.testimonialWrap {
+  width: 70%;
+  margin: 0 auto 5% auto;
+}
+
+.quote {
+  position: relative;
+}
+.quote .fas {
+  position: absolute;
+  color: #EEF6D1;
+  font-size: 30px;
+}
+.quote .fasLeft {
+  left: -5%;
+}
+.quote .fasRight {
+  right: -5%;
+  bottom: 15%;
+}
+.quote p {
+  font-style: italic;
+}
+
+.fa-chevron-left {
+  color: #EEF6D1;
+  margin: 3%;
+}
+
+.fa-chevron-right {
+  color: #F6F6F6;
+  margin: 3%;
+}
+
+footer {
+  color: #F6F6F6;
+  background-color: #2E2E2E;
+}
+footer .footWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  padding: 5%;
+}
+footer div {
+  width: 33%;
+  margin: 0 5%;
+}
+footer h4 {
+  color: #64A604;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  margin: 5% 0;
+}
+footer p, footer form {
+  border-bottom: 1px solid #474747;
+  color: #999999;
+  padding-bottom: 10%;
+  font-size: 12px;
+}
+footer p:last-child {
+  border: none;
+}
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer input {
+  background-color: #535353;
+  border: none;
+  color: #999999;
+  height: 100%;
+  font-family: "Lora", serif;
+  font-style: italic;
+  padding: 3% 6%;
+  width: 75%;
+}
+footer button {
+  width: 25%;
+}
+footer .favicons {
+  margin-top: 10%;
 }

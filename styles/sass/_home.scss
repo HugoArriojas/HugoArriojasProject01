@@ -1,10 +1,16 @@
 $white: #F6F6F6;
+$white2: #EEF6D1;
 $brownGrey: #F2F2F2;
 $textBlack: #333333;
 $black: #2E2E2E;
 $black2: #252525;
+$blackLine: #474747;
 $green: #64A604;
 $green2: #DDED9A;
+
+span {
+    color: $green;
+}
 
 // header styling
 
@@ -34,43 +40,34 @@ h1 {
 nav {
     width: 60%;
     margin-top: 15px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: bold;
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;   
+        color: $black;
+    }
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: bold;
-}
 
-ul {
-    list-style-type: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: $black;
-}
-
-nav span {
-    color: $green;
-}
-
-li.shopping {
+.shopping {
     position: relative;
-}
-
-.shopping p {
-    font-size: 8px;
-    position: absolute;
-    right: -8px;
-    bottom: -8px;
-    border-radius: 50%;
-    color: $white;
-    background-color: $green;
-    line-height: 15px;
-    padding: 0px 5px ;
-    margin: 0;
+    p {
+        font-size: 8px;
+        position: absolute;
+        right: -8px;
+        bottom: -8px;
+        border-radius: 50%;
+        color: $white;
+        background-color: $green;
+        line-height: 15px;
+        padding: 0px 5px ;
+        margin: 0;
+    }
 }
 
 section {
@@ -134,6 +131,11 @@ button {
     object-fit: cover;
 }
 
+h3{
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+}
+
 .dishesContent {
     max-width: 50%;
     background-color: $brownGrey;
@@ -155,8 +157,6 @@ button {
         display: flex;
     }
     h3{
-        font-family: "Raleway", sans-serif;
-        font-weight: bolder;
         margin: 0;
     }
     p {
@@ -207,12 +207,105 @@ h2 {
 .gallery {
     display: grid;
     grid-template-columns: auto auto auto;
+    img {
+        width: 100%;
+    }
 }
 
-.gallery img {
-    width: 100%;
-
+// Start of testimonials section
+.testimonial {
+    background-color: $green2;
+    flex-direction: column;
+    text-align: center;
 }
+
+
+.testimonialWrap {
+    width: 70%;
+    margin: 0 auto 5% auto;
+}
+
+.quote {
+    position: relative;
+    .fas {
+        position: absolute;
+        color: $white2;
+        font-size: 30px;
+    }
+    .fasLeft {
+        left: -5%;
+    }
+    .fasRight {
+        right: -5%;
+        bottom: 15%;
+    }
+    p {
+        font-style: italic;
+    }
+}
+
+.fa-chevron-left {
+    color: $white2;
+    margin: 3%;
+}
+
+.fa-chevron-right {
+    color: $white;
+    margin: 3%;
+}
+
+// Start of footer section
+
+footer {
+    color: $white;
+    background-color: $black;
+    .footWrapper {
+        display: flex;
+        width: 95%;
+        padding: 5%;
+    }
+    div {
+        // align-items: center;
+        width: 33%;
+        margin: 0 5%;
+    }
+    h4 {
+        color: $green;
+        font-family: "Raleway", sans-serif;
+        font-size: 28px;
+        margin: 5% 0;
+    }
+    p, form {
+        border-bottom: 1px solid $blackLine;
+        color: #999999;
+        padding-bottom: 10%;
+        font-size: 12px;
+    }
+    p:last-child {
+        border: none;
+    }
+    form {
+        display: flex;
+    }
+    input {
+        background-color: #535353;
+        border: none;
+        color: #999999;
+        height: 100%;
+        font-family: "Lora", serif;
+        font-style: italic;
+        padding: 3% 6%;
+        width: 75%;
+    }
+    button {
+        width: 25%;
+    }
+    .favicons {
+        margin-top: 10%;
+    }
+}
+
+
 
 
 
