@@ -75,23 +75,25 @@ li.shopping {
 
 section {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.recipe, 
-.dishes {
-    max-height: 700px;
+.recipe, .dishes {
+    max-height: 800px;
 }
 
 .recipeContent {
-    width: 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .recipeWrap {
     width: 80%;
     text-align: center;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -122,39 +124,95 @@ button {
     padding: 3% 6%;
 }
 
+.recipeImg {
+    width: 50%;
+}
+
 .foodImg{
     height: 100%;
-    width: 50%;
-    max-width: 50%;
-    max-height: 530px;
+    width: 100%;
     object-fit: cover;
 }
 
-
 .dishesContent {
+    max-width: 50%;
     background-color: $brownGrey;
-    width: 50%;
-    // height: 100%;
+    i {
+        margin: 0 10%;
+        font-size:25px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 10%;
+        height: 100%;
+        min-height: 530px;
+    }   
+    li {
+        width: 50%;
+        display: flex;
+    }
+    h3{
+        font-family: "Raleway", sans-serif;
+        font-weight: bolder;
+        margin: 0;
+    }
+    p {
+        font-family: "Lora", serif;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
 }
 
-.dishesContent ul {
-    display: flex;
-    flex-wrap: wrap;
+
+// Start of restaurant section
+
+.restaurants {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 5%;
-    height: 100%;
-    min-height: 530px;
+    text-align: center;
 }
 
-.dishesContent li {
-    width: 50%;
-    display: flex;
+.restoWrap {
+    width: 60%;
+    padding: 15% 0 10% 0;
+    margin: 0 auto;
 }
 
+.restoImg {
+    position: relative;
+}
 
+.resto {
+    width: 65%;
+}
 
+.circleLogo {
+    position: absolute;
+    width: 20%;
+    top: -30%;
+    right: 10%;
+}
 
+h2 {
+    margin-top: 10%;
+}
+
+// Start of gallery section
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gallery img {
+    width: 100%;
+
+}
 
 
 

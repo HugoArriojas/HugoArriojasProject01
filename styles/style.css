@@ -312,6 +312,17 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.recipe, .dishes {
+  max-height: 800px;
+}
+
+.recipeContent {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -320,19 +331,19 @@ section {
           justify-content: center;
 }
 
-.recipe,
-.dishes {
-  max-height: 700px;
-}
-
-.recipeContent {
-  width: 50%;
-}
-
 .recipeWrap {
   width: 80%;
   text-align: center;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2 {
@@ -363,20 +374,25 @@ button {
   padding: 3% 6%;
 }
 
+.recipeImg {
+  width: 50%;
+}
+
 .foodImg {
   height: 100%;
-  width: 50%;
-  max-width: 50%;
-  max-height: 530px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .dishesContent {
+  max-width: 50%;
   background-color: #F2F2F2;
-  width: 50%;
 }
-
+.dishesContent i {
+  margin: 0 10%;
+  font-size: 25px;
+}
 .dishesContent ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,14 +403,72 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 5%;
+  padding: 10%;
   height: 100%;
   min-height: 530px;
 }
-
 .dishesContent li {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.dishesContent h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+}
+.dishesContent p {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.restaurants {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.restoWrap {
+  width: 60%;
+  padding: 15% 0 10% 0;
+  margin: 0 auto;
+}
+
+.restoImg {
+  position: relative;
+}
+
+.resto {
+  width: 65%;
+}
+
+.circleLogo {
+  position: absolute;
+  width: 20%;
+  top: -30%;
+  right: 10%;
+}
+
+h2 {
+  margin-top: 10%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.gallery img {
+  width: 100%;
 }
