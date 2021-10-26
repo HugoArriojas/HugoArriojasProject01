@@ -49,10 +49,53 @@ header.blog {
 
 .author .sectionWrap {
     display: flex;
+    max-height: 400px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        min-width: 25%;
+    }
     .authorTxt {
         background-color: $white;
         padding: 5%;
         margin-left: 5%;
+        max-width: 75%;
     }
 }
 
+// Start of related section
+
+.related {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        li {
+        height: 100%;
+        width: 32%;
+        list-style-type: none;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        p {
+            color: $textGray;
+        }
+        strong {
+            color: $textGray2;
+            font-family: "Raleway", sans-serif;
+        }
+    }
+}
+}
+
+// Start of comment section
+
+.comment div {
+    background-color: $white;
+}

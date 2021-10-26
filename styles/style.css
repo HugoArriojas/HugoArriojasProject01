@@ -303,7 +303,7 @@ section {
 }
 
 .recipe, .dishes {
-  max-height: 800px;
+  max-height: 1100px;
 }
 
 .recipeContent {
@@ -372,7 +372,7 @@ button {
      object-fit: cover;
 }
 
-h3 {
+h3, h4 {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
 }
@@ -395,7 +395,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 10%;
+  padding: 5%;
   height: 100%;
   min-height: 530px;
 }
@@ -629,9 +629,53 @@ header.blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 400px;
+}
+.author .sectionWrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 25%;
 }
 .author .sectionWrap .authorTxt {
   background-color: #F6F6F6;
   padding: 5%;
   margin-left: 5%;
+  max-width: 75%;
+}
+
+.related ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+.related ul li {
+  height: 100%;
+  width: 32%;
+  list-style-type: none;
+}
+.related ul li img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.related ul li h4 {
+  font-size: 18px;
+}
+.related ul li p {
+  color: #999999;
+}
+.related ul li strong {
+  color: #666666;
+  font-family: "Raleway", sans-serif;
+}
+
+.comment div {
+  background-color: #F6F6F6;
 }

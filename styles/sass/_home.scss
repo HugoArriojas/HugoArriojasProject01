@@ -82,7 +82,7 @@ section {
 }
 
 .recipe, .dishes {
-    max-height: 800px;
+    max-height: 1100px;
 }
 
 .recipeContent {
@@ -137,7 +137,8 @@ button {
     object-fit: cover;
 }
 
-h3{
+// General styles
+h3, h4 {
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
 }
@@ -154,7 +155,7 @@ h3{
         flex-wrap: wrap;
         justify-content: center;
         margin: 0;
-        padding: 10%;
+        padding: 5%;
         height: 100%;
         min-height: 530px;
     }   
