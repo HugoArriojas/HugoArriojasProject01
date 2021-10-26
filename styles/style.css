@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -520,12 +511,15 @@ footer .footWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
-  padding: 5%;
+  width: 77%;
+  padding: 3% 0;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 footer div {
-  width: 33%;
-  margin: 0 5%;
+  width: 30%;
 }
 footer h4 {
   color: #64A604;
@@ -536,7 +530,7 @@ footer h4 {
 footer p, footer form {
   border-bottom: 1px solid #474747;
   color: #999999;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   font-size: 12px;
 }
 footer p:last-child {
@@ -561,5 +555,27 @@ footer button {
   width: 25%;
 }
 footer .favicons {
-  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .favicons i {
+  margin: 20%;
+}
+
+.runner {
+  background-color: #252525;
+  color: #EEF6D1;
+  margin: 0;
+  padding: 1%;
+}
+.runner .runWrap {
+  width: 77%;
+  margin: 0 auto;
+}
+.runner p {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  color: #999999;
+  margin: 0;
 }

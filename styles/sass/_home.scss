@@ -1,6 +1,7 @@
 $white: #F6F6F6;
 $white2: #EEF6D1;
 $brownGrey: #F2F2F2;
+$textGray: #999999;
 $textBlack: #333333;
 $black: #2E2E2E;
 $black2: #252525;
@@ -261,13 +262,15 @@ footer {
     background-color: $black;
     .footWrapper {
         display: flex;
-        width: 95%;
-        padding: 5%;
+        width: 77%;
+        padding: 3% 0;
+        margin: 0 auto;
+        justify-content: space-between;
     }
     div {
         // align-items: center;
-        width: 33%;
-        margin: 0 5%;
+        width: 30%;
+        // margin: 0 5%;
     }
     h4 {
         color: $green;
@@ -277,8 +280,8 @@ footer {
     }
     p, form {
         border-bottom: 1px solid $blackLine;
-        color: #999999;
-        padding-bottom: 10%;
+        color: $textGray;
+        padding-bottom: 5%;
         font-size: 12px;
     }
     p:last-child {
@@ -290,7 +293,7 @@ footer {
     input {
         background-color: #535353;
         border: none;
-        color: #999999;
+        color: $textGray;
         height: 100%;
         font-family: "Lora", serif;
         font-style: italic;
@@ -301,11 +304,31 @@ footer {
         width: 25%;
     }
     .favicons {
-        margin-top: 10%;
+        display: flex;
+    }
+    .favicons i {
+        margin: 20%;
     }
 }
 
+// Runner styling
 
+.runner {
+    background-color: $black2;
+    color: $white2;
+    margin: 0;
+    padding: 1%;
+    .runWrap {
+        width: 77%;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 14px;
+        font-family: "Raleway", sans-serif;
+        color: $textGray;
+        margin: 0;
+    }
+} 
 
 
 
