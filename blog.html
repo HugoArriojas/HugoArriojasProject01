@@ -14,27 +14,37 @@
 </head>
 
 <body>
-<header>
-    <h1> Delicious</h1>
-    <nav>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">RECIPES</a></li>
-            <li><a href="">NUTRITION</a></li>
-            <li><a href="#"><span>BLOG</span></a></li>
-            <li><a href="">SHOP</a></li>
-            <li><a href="">CONTACT</a></li>
-            <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
-            <li><a href=""><i class="fas fa-search"></i></a></li>
-        </ul>
-    </nav>
+<header class="blog">
+    <div class="headWrapper">
+
+        <h1> Delicious</h1>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">RECIPES</a></li>
+                <li><a href="">NUTRITION</a></li>
+                <li><a href="#"><span>BLOG</span></a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li class="shopping">
+                    <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    <p>2</p>
+                </li>
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
 
     <section class="pineChicken">
-        <h2>PINEAPPLE CHICKEN</h2>
-        <p>posted at July 11, 2018 | by Admin | in Recipes</p>
+        <div class="sectionWrap">
+        <div class="recipeTitle">
+            <h2>PINEAPPLE CHICKEN</h2>
+            <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
+        </div>    
+
         <p>
             Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque facilisis, magna erat
             dictum
@@ -66,25 +76,33 @@
             purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama
             salsify.
         </p>
+        
+    </div>
     </section>
 
 
     <section class="tags">
-        <h3>TAGS:</h3><p>Recipes, Chicken, Pineapple, Mexican</p>
-        <h3>
-            SHARE: 
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-        </h3>
+        <div class="sectionWrap">
+            <div>
+                <h3>TAGS: </h3>
+                <p>Recipes, Chicken, Pineapple, Mexican</p>
+            </div>
+            <h3>
+                SHARE: 
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </h3>
+        </div>
     </section>
 
 
     <section class="author">
-        <img src="../assets/blog-2.jpeg" alt="">
-        <div class="authorTxt">
-            <h3>SALLY LUCAS</h3>
-            <p>
+        <div class="sectionWrap">
+            <img src="./styles/assets/blog-2.jpeg" alt="">
+            <div class="authorTxt">
+                <h3>SALLY LUCAS</h3>
+                <p>
                 Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water
                 spinach
                 avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
@@ -95,35 +113,41 @@
                 swiss chard wakame kohlrabi.
             </p>
         </div>
+    </div>
     </section>
 
     <section class="related">
-        <h3>RELATED POSTS</h3>
-        <ul>
+        <div class="sectionWrap">
+
+            <h3>RELATED POSTS</h3>
+            <ul>
             <li>
-                <img src="../assets/blog-4.jpeg" alt="">
+                <img src="./styles/assets/blog-4.jpeg" alt="">
                 <h4>HOW TO BAKE THE PERFECT CAKE</h3>
-                <p>July 11, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
+                    <p>July 11, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
             </li>
             <li>
-                <img src="../assets/blog-5.jpeg" alt="">
+                <img src="./styles/assets/blog-5.jpeg" alt="">
                 <h4>FLORAL CUPCAKES</h3>
-                <p>July 19, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
-            </li>
-            <li>
-                <img src="../assets/blog-6.jpeg" alt="">
+                    <p>July 19, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
+                </li>
+                <li>
+                <img src="./styles/assets/blog-6.jpeg" alt="">
                 <h4>SINGLE POST WITH IMAGE</h3>
-                <p>July 22, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
-            </li>
-        </ul>
+                    <p>July 22, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="comments">
-        <h3>O2 Comments</h3>
-        <div class="comment avaro">
-            <img src="../assets/blog-6.jpeg" alt="">
-            <p>◀</p>
-            <!-- to be made into position absolute -->
+        <div class="sectionWrap">
+
+            <h3>O2 Comments</h3>
+            <div class="comment avaro">
+                <img src="./styles/assets/blog-6.jpeg" alt="">
+                <p>◀</p>
+                <!-- to be made into position absolute -->
             <div>
                 <p><strong>Lucatony Avaro</strong> • Web Developer</p>
                 <p>
@@ -135,7 +159,7 @@
             </div>
         </div>
         <div class="comment hudson">
-            <img src="../assets/blog-7.jpeg" alt="">
+            <img src="./styles/assets/blog-7.jpeg" alt="">
             <p>◀</p>
             <div>
                 <p><strong>Brian Hudson</strong> • Web Developer</p>
@@ -148,22 +172,26 @@
                 <p>Jul 17,2015 at 15 hours ago</p>
             </div>
         </div>
+    </div>
     </section>
-
+    
     <section class="feedback">
-        <h3>LEAVE A COMMENT</h3>
-        <p>Your email address will not be published. Required fields are marked</p>
-        <form action="submit">
-            <label for="name" class="srOnly">Please enter your name (required)</label>
-            <input type="text" placeholder="Name *" id="name">
-            <label for="email" class="srOnly">Pleas enter your email (required)</label>
-            <input type="email" placeholder="Email *" id="email">
+        <div class="sectionWrap">
+
+            <h3>LEAVE A COMMENT</h3>
+            <p>Your email address will not be published. Required fields are marked</p>
+            <form action="submit">
+                <label for="name" class="srOnly">Please enter your name (required)</label>
+                <input type="text" placeholder="Name *" id="name">
+                <label for="email" class="srOnly">Pleas enter your email (required)</label>
+                <input type="email" placeholder="Email *" id="email">
             <label for="website" class="srOnly">Please enter your website</label>
             <input type="text" placeholder="Your Website" id="website">
             <label for="comment" class="srOnly">Please enter your comment</label>
             <input type="text" placeholder="Comment" id="comment">
             <button type="submit">SUBMIT COMMENT</button>
         </form>
+    </div>
     </section>
 </main>
 <footer>

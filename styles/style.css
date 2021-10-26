@@ -233,6 +233,9 @@ span {
 header.home {
   height: 95vh;
   background-image: url(./assets/home-1.jpeg);
+}
+
+header {
   background-size: cover;
   font-family: "Raleway", sans-serif;
 }
@@ -334,8 +337,7 @@ section {
 h2 {
   font-size: 30px;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  margin: 10px;
+  font-weight: bolder;
 }
 
 .line {
@@ -578,4 +580,58 @@ footer .favicons i {
   font-family: "Raleway", sans-serif;
   color: #999999;
   margin: 0;
+}
+
+.pineChicken p, .author p {
+  color: #666666;
+}
+
+.sectionWrap {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3% 0;
+  border-bottom: 2px solid #E5E5E5;
+}
+
+header.blog {
+  background-image: url(./assets/blog-1.jpeg);
+  height: 50vh;
+}
+
+.pineChicken h2 {
+  margin-bottom: 0px;
+}
+.pineChicken .recipeTitle {
+  margin-bottom: 40px;
+}
+.pineChicken .recipeTitle p {
+  margin: 0;
+  color: #252525;
+}
+
+.tags .sectionWrap div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
+  line-height: 10px;
+}
+.tags p, .tags i {
+  color: #999999;
+}
+.tags i {
+  margin: 0 2%;
+}
+
+.author .sectionWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.author .sectionWrap .authorTxt {
+  background-color: #F6F6F6;
+  padding: 5%;
+  margin-left: 5%;
 }

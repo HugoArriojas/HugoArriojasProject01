@@ -1,0 +1,58 @@
+.pineChicken p, .author p {
+    color: $textGray2;
+}
+
+.sectionWrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3% 0;
+    border-bottom: 2px solid $blogLine;
+}
+
+// Blog header
+header.blog {
+    background-image: url(./assets/blog-1.jpeg);
+    height: 50vh;
+}
+// recipe section
+
+.pineChicken {
+    h2 {
+        margin-bottom: 0px;
+    }
+    .recipeTitle {
+        margin-bottom: 40px;
+        p {
+            margin: 0;
+            color: $black2;
+        }
+    }
+}
+
+// Tags section
+
+.tags {
+    .sectionWrap div {
+        display: flex;
+        align-items: bottom;
+        line-height: 10px;
+    }
+    p, i {
+        color: $textGray;
+    }
+    i {
+        margin: 0 2%;
+    }
+}
+
+// Start of author section
+
+.author .sectionWrap {
+    display: flex;
+    .authorTxt {
+        background-color: $white;
+        padding: 5%;
+        margin-left: 5%;
+    }
+}
+
