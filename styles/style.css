@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -613,15 +614,12 @@ header.blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: bottom;
-      -ms-flex-align: bottom;
-          align-items: bottom;
-  line-height: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .tags p, .tags i {
   color: #999999;
-}
-.tags i {
   margin: 0 2%;
 }
 
@@ -667,15 +665,50 @@ header.blog {
 }
 .related ul li h4 {
   font-size: 18px;
+  margin: 5% 0 0 0;
 }
 .related ul li p {
   color: #999999;
+  margin-top: 1%;
+  font-size: 14px;
 }
 .related ul li strong {
   color: #666666;
   font-family: "Raleway", sans-serif;
 }
 
-.comment div {
-  background-color: #F6F6F6;
+.reviews h3 {
+  margin: 0 0 5% 0;
+}
+.reviews .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% 0;
+}
+.reviews .comment img {
+  height: 50%;
+  width: 100%;
+  max-width: 10%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.reviews .comment .commentTxt {
+  background-color: #F2F2F2;
+  width: 85%;
+  padding: 1% 5%;
+  margin-left: 5%;
+  position: relative;
+}
+.reviews .comment .commentTxt p:last-child {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 10px;
+}
+.reviews .commentTxt::before {
+  content: "◀";
+  position: absolute;
+  left: -15px;
+  font-size: 20px;
+  color: #F2F2F2;
 }

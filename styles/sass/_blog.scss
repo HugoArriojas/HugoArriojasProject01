@@ -34,15 +34,13 @@ header.blog {
 .tags {
     .sectionWrap div {
         display: flex;
-        align-items: bottom;
-        line-height: 10px;
+        align-items: center;
     }
     p, i {
         color: $textGray;
-    }
-    i {
         margin: 0 2%;
     }
+
 }
 
 // Start of author section
@@ -82,9 +80,12 @@ header.blog {
         }
         h4 {
             font-size: 18px;
+            margin: 5% 0 0 0;
         }
         p {
             color: $textGray;
+            margin-top: 1%;
+            font-size: 14px;
         }
         strong {
             color: $textGray2;
@@ -94,8 +95,39 @@ header.blog {
 }
 }
 
-// Start of comment section
-
-.comment div {
-    background-color: $white;
+// Start of reviews section
+.reviews {
+    h3 {
+        margin: 0 0 5% 0;
+    }
+    .comment{ 
+        display: flex;
+        margin: 2% 0;
+        img {
+            height: 50%;
+            width: 100%;
+            max-width: 10%;
+            object-fit: contain;
+        }
+        .commentTxt {
+            background-color: $brownGrey;
+            width: 85%;
+            padding: 1% 5%;
+            margin-left: 5%;
+            position: relative;
+            p:last-child{
+                font-family: "Raleway",sans-serif;
+                font-weight: bolder;
+                font-size: 10px;
+            }
+        }
+    }
+    .commentTxt::before {
+        content: "◀";
+        position: absolute;
+        left: -15px;
+        font-size: 20px;
+        color: $brownGrey;
+    }    
 }
+
