@@ -752,15 +752,33 @@ header.contact {
   height: 50vh;
 }
 
-.submit input {
+.contactWrap {
+  width: 85%;
+  margin-left: auto;
+}
+
+.contactMain input {
   font-family: "Lora", serif;
   font-size: 14px;
   padding: 3%;
-  color: #999999;
+  border: none;
+  color: #666666;
   background-color: #F6F6F6;
 }
-.submit div {
+.contactMain .contactWrap, .contactMain .contactNameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactMain form {
+  width: 66%;
+  margin-right: 5%;
+}
+.contactMain .contactDetails {
+  background-color: #F6F6F6;
+  width: 34%;
+  padding: 0 15% 0 5%;
 }

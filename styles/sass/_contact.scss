@@ -3,16 +3,32 @@ header.contact {
     height: 50vh;
 }
 
+.contactWrap {
+    width: 85%;
+    margin-left: auto;
+}
+
 // Start of form section
-.submit {
+.contactMain {
     input {
         font-family: "Lora", serif;
         font-size: 14px;
         padding: 3%;
-        color: $textGray;
+        border: none;
+        color: $textGray2;
         background-color: $white;
     }
-    div {
+    .contactWrap, .contactNameEmail {
         display: flex;
+        justify-content: space-between;
+    }
+    form{
+        width: 66%;
+        margin-right: 5%;
+    }
+    .contactDetails {
+        background-color: $white;
+        width: 34%;
+        padding: 0 15% 0 5%
     }
 }
