@@ -131,3 +131,38 @@ header.blog {
     }    
 }
 
+// Start of feedback section
+
+.feedback, textarea {
+    .sectionWrap{
+        border: none;
+    }
+    color: $textGray;
+    input, textarea {
+        width: 32%;
+        border: 1px $blogLine solid;
+        padding: 1%;
+        font-family: "Lora", serif;
+        font-size: 12px;
+    }
+    .customerInfo {
+        display: flex;
+        justify-content: space-between;
+    }
+    #comment {
+        width: 100%;
+        height: 100px;
+        margin: 1% 0;
+    }
+    button {
+        padding: 3%;
+    }
+}
+
+
+// Start of footer
+.blogEmail {
+    margin-top: 50%;
+}
+
+

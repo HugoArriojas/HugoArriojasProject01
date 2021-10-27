@@ -182,26 +182,29 @@
 
         <section class="feedback">
             <div class="sectionWrap">
-
                 <h3>LEAVE A COMMENT</h3>
-                <p>Your email address will not be published. Required fields are marked</p>
+                <p>Your email address will not be published. Required fields are marked *</p>
                 <form action="submit">
-                    <label for="name" class="srOnly">Please enter your name (required)</label>
-                    <input type="text" placeholder="Name *" id="name">
-                    <label for="email" class="srOnly">Pleas enter your email (required)</label>
-                    <input type="email" placeholder="Email *" id="email">
-                    <label for="website" class="srOnly">Please enter your website</label>
-                    <input type="text" placeholder="Your Website" id="website">
+                    <div class="customerInfo">
+                        <label for="name" class="srOnly">Please enter your name (required)</label>
+                        <input type="text" placeholder="Name *" id="name">
+                        <label for="email" class="srOnly">Pleas enter your email (required)</label>
+                        <input type="email" placeholder="Email *" id="email">
+                        <label for="website" class="srOnly">Please enter your website</label>
+                        <input type="text" placeholder="Your Website" id="website">
+                    </div>
                     <label for="comment" class="srOnly">Please enter your comment</label>
-                    <input type="text" placeholder="Comment" id="comment">
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
                     <button type="submit">SUBMIT COMMENT</button>
                 </form>
             </div>
         </section>
     </main>
+
     <footer>
+        <div class="footWrapper">
         <div class="delicious">
-            <h5>DELICIOUS</h5>
+            <h4>DELICIOUS</h4>
             <p>
                 Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels
                 sprout cabbage.
@@ -213,7 +216,7 @@
             <p>+1 234 567 8910</p>
         </div>
         <div class="recentPosts">
-            <h4>RECENT POSTS</h4>
+            <h3>RECENT POSTS</h3>
             <p>Beetroot water spinach okra water</p>
             <p>Chestnut ricebean pea catsear cpurgette</p>
             <p>Summer purslane spinach arugula pea</p>
@@ -222,18 +225,22 @@
             <p>Salsify pea sprouts faca bean</p>
         </div>
         <div class="subscribe">
-            <h4>SUBSCRIBE NOW</h4>
-            <form>
+            <h3>SUBSCRIBE NOW</h3>
+            <form class="blogEmail">
                 <label for="email" class="srOnly">Pleas enter your email</label>
-                <input type="email" name="email">
-                <button type="submit" name="email"><i class="fas fa-long-arrow-alt-right"></i></button>
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit" name="email" aria-placeholder="Submit"
+                ><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
+        </div>
         </div>
     </footer>
     <div class="runner">
-        <p>
-            Copyright © 2015 by <span>POLAR.</span> All Rights Reserved.
-        </p>
+        <div class="runWrap">
+            <p>
+                Copyright © 2015 by <span>POLAR.</span> All Rights Reserved.
+            </p>
+        </div>
     </div>
 </body>
 
