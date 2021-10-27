@@ -1,3 +1,18 @@
 header.contact {
     background-image: url(./assets/contact-1.jpeg);
+    height: 50vh;
+}
+
+// Start of form section
+.submit {
+    input {
+        font-family: "Lora", serif;
+        font-size: 14px;
+        padding: 3%;
+        color: $textGray;
+        background-color: $white;
+    }
+    div {
+        display: flex;
+    }
 }

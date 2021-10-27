@@ -749,4 +749,18 @@ header.blog {
 
 header.contact {
   background-image: url(./assets/contact-1.jpeg);
+  height: 50vh;
+}
+
+.submit input {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  padding: 3%;
+  color: #999999;
+  background-color: #F6F6F6;
+}
+.submit div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
