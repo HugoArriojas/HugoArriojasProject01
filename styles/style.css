@@ -234,6 +234,7 @@ html {
 h3, h4 {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
+  margin: 5% 0 10% 0;
 }
 
 header {
@@ -269,7 +270,6 @@ h1 {
   font-weight: bolder;
   line-height: 24px;
   letter-spacing: 1.1px;
-  max-width: 25%;
 }
 
 nav {
@@ -309,19 +309,20 @@ nav a:hover, nav a:focus {
 .menucontent {
   display: none;
   position: absolute;
+  top: 1000px;
 }
 
-.menu:hover, .menu:focus {
+.menu:hover, .menu:focus, .menu:focus-within {
   color: #64A604;
   z-index: 10;
 }
-.menu:hover .menuContent, .menu:focus .menuContent {
+.menu:hover .menuContent, .menu:focus .menuContent, .menu:focus-within .menuContent {
   display: block;
 }
-.menu:hover a, .menu:focus a {
+.menu:hover a, .menu:focus a, .menu:focus-within a {
   display: block;
   margin: 5px 0;
-  padding: 5%;
+  padding: 6%;
   min-width: 125px;
   font-size: 20px;
   text-align: left;
@@ -329,7 +330,7 @@ nav a:hover, nav a:focus {
   background-color: #F6F6F6;
   border: 2px solid #2E2E2E;
 }
-.menu:hover a:hover, .menu:hover a:focus, .menu:focus a:hover, .menu:focus a:focus {
+.menu:hover a:hover, .menu:hover a:focus, .menu:focus a:hover, .menu:focus a:focus, .menu:focus-within a:hover, .menu:focus-within a:focus {
   color: #A2006D;
 }
 
@@ -376,7 +377,7 @@ section {
           justify-content: center;
 }
 
-.recipeWrap {
+.recipeWrapper {
   width: 80%;
   text-align: center;
   display: -webkit-box;
@@ -485,7 +486,7 @@ button {
   text-align: center;
 }
 
-.restoWrap {
+.restoWrapper {
   width: 60%;
   padding: 15% 0 10% 0;
   margin: 0 auto;
@@ -523,7 +524,7 @@ button {
   text-align: center;
 }
 
-.testimonialWrap {
+.testimonialWrapper {
   width: 64%;
   margin: 0 auto 5% auto;
 }
@@ -607,13 +608,15 @@ footer input {
 }
 footer button {
   width: 25%;
+  padding: 3.4%;
 }
 footer .favicons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-footer .favicons i {
+footer .favicons a {
+  color: #F6F6F6;
   margin: 20%;
 }
 
@@ -623,7 +626,7 @@ footer .favicons i {
   margin: 0;
   padding: 1%;
 }
-.runner .runWrap {
+.runner .runWrapper {
   width: 70%;
   margin: 0 auto;
 }
@@ -876,9 +879,43 @@ header.contact {
     padding: 0;
   }
 }
+@media (max-width: 900px) {
+  .quote .fasRight {
+    right: -15%;
+  }
+  .quote .fasLeft {
+    left: -15%;
+  }
+}
 @media (max-width: 768px) {
-  nav ul {
-    margin: 0 10%;
+  .headWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 50vh;
+  }
+  .headWrapper .mainTitle {
+    background-color: #F6F6F6;
+    padding: 2%;
+    border: 2px solid #2E2E2E;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .headWrapper h1 {
+    text-align: center;
+    font-size: 42px;
+    height: 100%;
+    width: 100%;
+  }
+  .headWrapper nav {
+    width: 20%;
+    margin: 0 auto;
+    height: 10%;
+    justify-self: center;
   }
 
   .menu {
@@ -887,6 +924,26 @@ header.contact {
 
   header a:not(.mainTitle, .menuContent), header p {
     display: none;
+  }
+
+  .recipe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipe .recipeContent {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: none;
+  }
+  .recipe .recipeImg {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-height: 400px;
+    width: 100%;
   }
 
   .dishes {
@@ -905,5 +962,36 @@ header.contact {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    max-height: 400px;
+  }
+
+  .restoWrapper, .runner .runWrapper, footer .footWrapper {
+    width: 85%;
+  }
+
+  footer h3, footer h4 {
+    font-size: 18px;
+  }
+  footer form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer form input {
+    width: 100%;
+    padding: 8%;
+    margin-bottom: 5%;
+  }
+  footer form button {
+    width: 100%;
+    padding: 8%;
+  }
+}
+@media (max-width: 490px) {
+  .restaurants, .restoWrapper {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
