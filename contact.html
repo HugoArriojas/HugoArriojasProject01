@@ -48,14 +48,14 @@
     </header>
     <main>
         <section class="contactMain">
-            <div class="contactWrap">
+            <div class="contactWrapper">
             <form action="submit">
                 <h2>DROP US A LINE</h2>
                 <div class="contactNameEmail">
-                    <label for="name" class="srOnly">Your name</label>
-                    <input type="text" id="name" placeholder="Your name">
-                    <label for="email" class="srOnly">Your email</label>
-                    <input type="text" id="email" placeholder="Your Email">
+                    <label for="name" class="srOnly">Enter your name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <label for="email" class="srOnly">Enter your email</label>
+                    <input type="email" id="email" placeholder="Your Email">
                 </div>
                 <label for="subject" class="srOnly">Subject of email</label>
                 <input type="text" id="emailSubject" placeholder="Subject" class="subjectInput">
@@ -81,8 +81,11 @@
             </div>
             </div>
         </section>
-        <img src="./styles/assets/contact-2.jpeg" alt="" class="contactBanner">
+        <div class="contactImage">
+            <img src="./styles/assets/contact-2.jpeg" alt="" class="contactBanner">
+        </div>
     </main>
+
 
     <footer>
         <div class="footWrapper">
@@ -112,19 +115,20 @@
                 Get all of our newest recipes immediately in your inbox!
             </p>
             <form>
-                <input type="email" name="email" id="">
+                <input type="email" name="email" id="emailInput" placeholder="Enter your email">
                 <button type="submit" name="email"><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
             <div class="favicons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         </div>
     </footer>
+
     <div class="runner">
-        <div class="runWrap">
+        <div class="runWrapper">
             <p>
                 Copyright © 2015 by <span>POLAR.</span> All Rights Reserved.
             </p>

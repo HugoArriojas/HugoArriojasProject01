@@ -2,7 +2,7 @@
     color: $textGray2;
 }
 
-.sectionWrap {
+.sectionWrapper {
     width: 70%;
     margin: 0 auto;
     padding: 3% 0;
@@ -32,9 +32,12 @@ header.blog {
 // Tags section
 
 .tags {
-    .sectionWrap div {
+    .sectionWrapper div {
         display: flex;
         align-items: center;
+    }
+    h3 {
+        margin: 2% 0;
     }
     p, i {
         color: $textGray;
@@ -45,9 +48,9 @@ header.blog {
 
 // Start of author section
 
-.author .sectionWrap {
+.author .sectionWrapper {
     display: flex;
-    max-height: 400px;
+    max-height: 500px;
     img {
         height: 100%;
         width: 100%;
@@ -134,7 +137,7 @@ header.blog {
 // Start of feedback section
 
 .feedback, textarea {
-    .sectionWrap{
+    .sectionWrapper{
         border: none;
     }
     input, textarea {

@@ -599,6 +599,9 @@ footer p, footer form {
 footer p:last-child {
   border: none;
 }
+footer .subscribeParagraph {
+  border: none;
+}
 footer form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -649,7 +652,7 @@ footer .favicons a {
   color: #666666;
 }
 
-.sectionWrap {
+.sectionWrapper {
   width: 70%;
   margin: 0 auto;
   padding: 3% 0;
@@ -672,7 +675,7 @@ header.blog {
   color: #252525;
 }
 
-.tags .sectionWrap div {
+.tags .sectionWrapper div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,25 +683,28 @@ header.blog {
       -ms-flex-align: center;
           align-items: center;
 }
+.tags h3 {
+  margin: 2% 0;
+}
 .tags p, .tags i {
   color: #999999;
   margin: 0 2%;
 }
 
-.author .sectionWrap {
+.author .sectionWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 400px;
+  max-height: 500px;
 }
-.author .sectionWrap img {
+.author .sectionWrapper img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   min-width: 25%;
 }
-.author .sectionWrap .authorTxt {
+.author .sectionWrapper .authorTxt {
   background-color: #F6F6F6;
   padding: 5%;
   margin-left: 5%;
@@ -775,7 +781,7 @@ header.blog {
   color: #F2F2F2;
 }
 
-.feedback .sectionWrap, textarea .sectionWrap {
+.feedback .sectionWrapper, textarea .sectionWrapper {
   border: none;
 }
 .feedback input, .feedback textarea, textarea input, textarea textarea {
@@ -811,7 +817,7 @@ header.contact {
   height: 50vh;
 }
 
-.contactWrap {
+.contactWrapper {
   width: 85%;
   margin-left: auto;
 }
@@ -826,7 +832,7 @@ header.contact {
   margin: 2% 0;
   padding: 3%;
 }
-.contactMain .contactWrap, .contactMain .contactNameEmail {
+.contactMain .contactWrapper, .contactMain .contactNameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,10 +878,10 @@ header.contact {
 }
 
 .contactBanner {
-  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 @media (max-width: 1100px) {
@@ -904,7 +910,7 @@ header.contact {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: 50vh;
+    height: 60%;
   }
   .headWrapper .mainTitle {
     background-color: #F6F6F6;
@@ -934,6 +940,25 @@ header.contact {
     display: none;
   }
 
+  .sectionWrapper, .restoWrapper, .runner .runWrapper, footer .footWrapper {
+    width: 85%;
+  }
+
+  footer h3, footer h4 {
+    font-size: 18px;
+  }
+  footer form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer form input, footer form button {
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 4%;
+  }
+
   .recipe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -959,6 +984,7 @@ header.contact {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-height: none;
   }
   .dishes .dishesContent {
     -webkit-box-ordinal-group: 2;
@@ -973,30 +999,57 @@ header.contact {
     max-height: 400px;
   }
 
-  .restoWrapper, .runner .runWrapper, footer .footWrapper {
-    width: 85%;
+  .contactMain {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
-  footer h3, footer h4 {
-    font-size: 18px;
+  .contactMain .contactWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    width: 100%;
   }
-  footer form {
+  .contactMain .contactWrapper h2, .contactMain .contactWrapper h3, .contactMain .contactWrapper p, .contactMain .contactWrapper a, .contactMain .contactWrapper button {
+    margin: 3% 0;
+  }
+  .contactMain .contactWrapper form {
+    width: 100%;
+    padding: 0 10%;
+  }
+  .contactMain .contactWrapper .contactDetails {
+    width: 100%;
+    padding: 0 10%;
+  }
+}
+@media (max-width: 490px) {
+  footer .footWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer form input {
+  footer div {
     width: 100%;
-    padding: 8%;
-    margin-bottom: 5%;
   }
-  footer form button {
-    width: 100%;
-    padding: 8%;
+  footer div h2, footer div h3 {
+    margin: 2% 0;
   }
-}
-@media (max-width: 490px) {
+  footer div p {
+    padding: 0;
+  }
+  footer .favicons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .favicons a {
+    margin: 5%;
+    font-size: 30px;
+  }
+
   .dishes {
     max-height: none;
   }
@@ -1009,7 +1062,14 @@ header.contact {
     grid-template-columns: auto auto;
   }
 
-  footer h3, footer h4 {
-    font-size: 14px;
+  .contactMain .contactNameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMain .contactNameEmail input {
+    width: 100%;
+    padding: 5%;
   }
 }

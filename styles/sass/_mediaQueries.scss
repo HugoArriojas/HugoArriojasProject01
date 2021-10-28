@@ -20,10 +20,11 @@
 }
 
 @media (max-width: 768px) {
+    // General header styling
     .headWrapper {
         display: flex;
         flex-direction: column-reverse;
-        height: 50vh;
+        height: 60%;
         .mainTitle {
             background-color: $white;
             padding: 2%;
@@ -49,6 +50,27 @@
     header a:not(.mainTitle, .menuContent), header p {
         display: none;
     }
+
+    .sectionWrapper, .restoWrapper, .runner .runWrapper, footer .footWrapper {
+        width: 85%;
+    }
+
+    // General footer styling
+    footer {
+        h3, h4 {
+            font-size: 18px;
+        }
+        form {
+            flex-direction: column;
+            input, button {
+                width: 100%;
+                padding: 4%;
+                margin-bottom: 4%;
+            }
+        }
+    }
+
+    // start of home page styling
     .recipe {
         flex-direction: column;
         .recipeContent{
@@ -63,6 +85,7 @@
     }
     .dishes {
         flex-direction: column;
+        max-height: none;
         .dishesContent{
             order: 1;
             max-width: none;
@@ -72,29 +95,56 @@
             max-height: 400px;
         }
     }
-    .restoWrapper, .runner .runWrapper, footer .footWrapper {
-        width: 85%;
-    }
-    footer {
-        h3, h4 {
-            font-size: 18px;
+    // Start of Contact page styling
+    .contactMain {
+        justify-content: center;
+
+    
+    .contactWrapper{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        h2, h3, p, a, button {
+            margin: 3% 0;
         }
         form {
-            flex-direction: column;
-            input {
-                width: 100%;
-                padding: 8%;
-                margin-bottom: 5%;
-            }
-            button {
-                width: 100%;
-                padding: 8%;
-            }
+            width: 100%;
+            padding: 0 10%;
+        }
+        .contactDetails {
+            width: 100%;
+            padding: 0 10%;
         }
     }
 }
+}
 
 @media (max-width: 490px) {
+    // General footer styling
+    footer {
+        .footWrapper {
+            flex-direction: column;
+        }
+        div {
+            width: 100%;
+            h2, h3 {
+                margin: 2% 0;
+            }
+            p {
+                padding: 0;
+            }
+        }
+        .favicons {
+            justify-content: space-evenly;
+            a {
+                margin: 5%;
+                font-size: 30px;
+            }
+        }
+    }
+    
+
+    // Home page styling
     .dishes {
         max-height: none;
         .dishesContent i {
@@ -105,9 +155,13 @@
     .gallery {
         grid-template-columns: auto auto;
     }
-    footer {
-        h3, h4 {
-            font-size: 14px;
+
+    // Contact page styling
+    .contactMain .contactNameEmail {
+        flex-direction: column;
+        input {
+            width: 100%;
+            padding: 5%;
         }
     }
 
