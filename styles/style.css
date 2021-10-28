@@ -237,6 +237,10 @@ h3, h4 {
   margin: 5% 0 10% 0;
 }
 
+button:hover, button:focus {
+  background-color: #A2006D;
+}
+
 header {
   background-size: cover;
   font-family: "Raleway", sans-serif;
@@ -421,6 +425,10 @@ button {
   font-weight: bold;
   padding: 3% 6%;
   margin-bottom: 10%;
+}
+button a {
+  text-decoration: none;
+  color: #F6F6F6;
 }
 
 .recipeImg {
@@ -989,9 +997,19 @@ header.contact {
   }
 }
 @media (max-width: 490px) {
-  .restaurants, .restoWrapper {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .dishes {
+    max-height: none;
+  }
+  .dishes .dishesContent i {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .gallery {
+    grid-template-columns: auto auto;
+  }
+
+  footer h3, footer h4 {
+    font-size: 14px;
   }
 }
