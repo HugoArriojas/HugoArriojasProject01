@@ -240,6 +240,12 @@ header {
   background-size: cover;
   font-family: "Raleway", sans-serif;
 }
+header a {
+  text-decoration: none;
+}
+header a:hover, header a:focus, header h1:hover, header h1:focus {
+  color: #64A604;
+}
 
 .headWrapper {
   width: 95%;
@@ -279,6 +285,9 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #2E2E2E;
+}
+nav a:hover, nav a:focus {
+  color: #A2006D;
 }
 
 .shopping {
@@ -336,9 +345,11 @@ section {
 }
 
 h2 {
+  margin-top: 10%;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
+  line-height: 36px;
 }
 
 .line {
@@ -360,6 +371,7 @@ button {
   border: none;
   font-size: 14px;
   padding: 3% 6%;
+  margin-bottom: 10%;
 }
 
 .recipeImg {
@@ -449,10 +461,6 @@ h3, h4 {
   width: 20%;
   top: -30%;
   right: 10%;
-}
-
-h2 {
-  margin-top: 10%;
 }
 
 .gallery {
@@ -757,13 +765,15 @@ header.contact {
   margin-left: auto;
 }
 
-.contactMain input {
+.contactMain input, .contactMain textarea {
   font-family: "Lora", serif;
   font-size: 14px;
-  padding: 3%;
   border: none;
   color: #666666;
   background-color: #F6F6F6;
+  width: 100%;
+  margin: 2% 0;
+  padding: 3%;
 }
 .contactMain .contactWrap, .contactMain .contactNameEmail {
   display: -webkit-box;
@@ -773,12 +783,56 @@ header.contact {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.contactMain .contactNameEmail input {
+  width: 49%;
+}
 .contactMain form {
-  width: 66%;
   margin-right: 5%;
+}
+.contactMain button {
+  background-color: #00000000;
+  color: #64A604;
+  padding: 3% 0;
+  font-weight: bold;
 }
 .contactMain .contactDetails {
   background-color: #F6F6F6;
-  width: 34%;
-  padding: 0 15% 0 5%;
+  width: 50%;
+  padding: 5% 15% 5% 5%;
+}
+.contactMain .contactDetails h2 {
+  margin-top: 0;
+}
+.contactMain .contactDetails h3 {
+  margin-top: 20%;
+}
+.contactMain .contactDetails p, .contactMain .contactDetails a {
+  color: #666666;
+  text-decoration: none;
+  margin: 10% 0;
+  display: block;
+}
+.contactMain .contactDetails .workingHours {
+  color: #252525;
+}
+.contactMain .contactDetails strong {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.contactBanner {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  nav {
+    width: 70%;
+  }
+
+  header ul {
+    padding: 0;
+  }
 }

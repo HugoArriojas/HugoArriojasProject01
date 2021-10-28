@@ -10,25 +10,61 @@ header.contact {
 
 // Start of form section
 .contactMain {
-    input {
+    input, textarea {
         font-family: "Lora", serif;
         font-size: 14px;
-        padding: 3%;
         border: none;
         color: $textGray2;
         background-color: $white;
+        width: 100%;
+        margin: 2% 0;
+        padding: 3%;
     }
     .contactWrap, .contactNameEmail {
         display: flex;
         justify-content: space-between;
     }
+    .contactNameEmail input {
+        width: 49%;
+    }
     form{
-        width: 66%;
+        // width: auto;
         margin-right: 5%;
+    }
+    button {
+        background-color: #00000000;
+        color: $green;
+        padding: 3% 0;
+        font-weight: bold;
     }
     .contactDetails {
         background-color: $white;
-        width: 34%;
-        padding: 0 15% 0 5%
+        width: 50%;
+        padding: 5% 15% 5% 5%;
+        h2 {
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 20%;
+        }
+        p, a {
+            color: $textGray2;
+            text-decoration: none;
+            margin: 10% 0;
+            display: block;
+        }
+        .workingHours {
+            color: $black2;
+        }
+        strong {
+            font-family: "Raleway", sans-serif;
+            font-weight: bold;
+        }
     }
+}
+
+.contactBanner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
