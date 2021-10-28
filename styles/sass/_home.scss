@@ -1,28 +1,15 @@
-$white: #F6F6F6;
-$white2: #EEF6D1;
-$brownGrey: #F2F2F2;
-$blogLine: #E5E5E5;
-$textGray: #999999;
-$textGray2: #666666;
-$textBlack: #333333;
-$black: #2E2E2E;
-$black2: #252525;
-$blackLine: #474747;
-$green: #64A604;
-$green2: #DDED9A;
-$purple: #A2006D;
-
-span {
-    color: $green;
+html {
+    scroll-behavior: smooth;
 }
+
+// General styles
+h3, h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+}
+
 
 // header styling
-
-header.home {
-    height: 95vh;
-    background-image: url(./assets/home-1.jpeg);
-}
-
 header {
     background-size:cover;
     font-family: "Raleway", sans-serif;
@@ -33,6 +20,12 @@ header {
         color: $green;
     }    
 }
+
+header.home {
+    height: 95vh;
+    background-image: url(./assets/home-1.jpeg);
+}
+
 
 .headWrapper {
     width: 95%;
@@ -51,7 +44,7 @@ h1 {
 }
 
 nav {
-    width: 60%;
+    width: 50%;
     margin-top: 15px;
     ul {
         display: flex;
@@ -69,6 +62,47 @@ nav {
     }
 }
 
+.menu {
+    display: none;
+    color: $black;
+    font-size: 30px;
+    border-top: 3px solid $black;
+    border-bottom: 3px solid $black;
+    padding: 5px 0;
+    width: 125px;
+    text-align: center;
+}
+
+.menucontent {
+    display: none;
+    position: absolute;
+}
+
+.menu:hover, .menu:focus {
+    color: $green;
+    z-index: 10;
+    .menuContent {
+        display: block;
+    }
+    a {
+        display: block;
+        margin: 5px 0;
+        padding: 5%;
+        min-width: 125px;
+        font-size: 20px;
+        text-align: left;
+        color: $black;
+        background-color: $white;
+        border: 2px solid $black;
+    }
+    a:hover, a:focus {
+        color: $purple;
+    }
+}
+
+span {
+    color: $green;
+}
 
 .shopping {
     position: relative;
@@ -86,6 +120,7 @@ nav {
     }
 }
 
+// Start of main content
 section {
     display: flex;
 }
@@ -94,6 +129,7 @@ section {
     max-height: 1100px;
 }
 
+// Start of recipe section
 .recipeContent {
     max-width: 50%;
     display: flex;
@@ -135,6 +171,7 @@ button {
     color: $white;
     border: none;
     font-size: 14px;
+    font-weight: bold;
     padding: 3% 6%;
     margin-bottom: 10%;
 }
@@ -149,12 +186,7 @@ button {
     object-fit: cover;
 }
 
-// General styles
-h3, h4 {
-    font-family: "Raleway", sans-serif;
-    font-weight: bolder;
-}
-
+// Start of dishes section
 .dishesContent {
     max-width: 50%;
     background-color: $brownGrey;

@@ -227,13 +227,13 @@ html {
   overflow: hidden;
 }
 
-span {
-  color: #64A604;
+html {
+  scroll-behavior: smooth;
 }
 
-header.home {
-  height: 95vh;
-  background-image: url(./assets/home-1.jpeg);
+h3, h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 header {
@@ -245,6 +245,11 @@ header a {
 }
 header a:hover, header a:focus, header h1:hover, header h1:focus {
   color: #64A604;
+}
+
+header.home {
+  height: 95vh;
+  background-image: url(./assets/home-1.jpeg);
 }
 
 .headWrapper {
@@ -268,7 +273,7 @@ h1 {
 }
 
 nav {
-  width: 60%;
+  width: 50%;
   margin-top: 15px;
 }
 nav ul {
@@ -288,6 +293,48 @@ nav a {
 }
 nav a:hover, nav a:focus {
   color: #A2006D;
+}
+
+.menu {
+  display: none;
+  color: #2E2E2E;
+  font-size: 30px;
+  border-top: 3px solid #2E2E2E;
+  border-bottom: 3px solid #2E2E2E;
+  padding: 5px 0;
+  width: 125px;
+  text-align: center;
+}
+
+.menucontent {
+  display: none;
+  position: absolute;
+}
+
+.menu:hover, .menu:focus {
+  color: #64A604;
+  z-index: 10;
+}
+.menu:hover .menuContent, .menu:focus .menuContent {
+  display: block;
+}
+.menu:hover a, .menu:focus a {
+  display: block;
+  margin: 5px 0;
+  padding: 5%;
+  min-width: 125px;
+  font-size: 20px;
+  text-align: left;
+  color: #2E2E2E;
+  background-color: #F6F6F6;
+  border: 2px solid #2E2E2E;
+}
+.menu:hover a:hover, .menu:hover a:focus, .menu:focus a:hover, .menu:focus a:focus {
+  color: #A2006D;
+}
+
+span {
+  color: #64A604;
 }
 
 .shopping {
@@ -370,6 +417,7 @@ button {
   color: #F6F6F6;
   border: none;
   font-size: 14px;
+  font-weight: bold;
   padding: 3% 6%;
   margin-bottom: 10%;
 }
@@ -383,11 +431,6 @@ button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-h3, h4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
 }
 
 .dishesContent {
@@ -721,9 +764,6 @@ header.blog {
   color: #F2F2F2;
 }
 
-.feedback, textarea {
-  color: #999999;
-}
 .feedback .sectionWrap, textarea .sectionWrap {
   border: none;
 }
@@ -827,12 +867,43 @@ header.contact {
      object-fit: cover;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   nav {
     width: 70%;
   }
 
   header ul {
     padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    margin: 0 10%;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  header a:not(.mainTitle, .menuContent), header p {
+    display: none;
+  }
+
+  .dishes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dishes .dishesContent {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: none;
+  }
+  .dishes .dishesImg {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
