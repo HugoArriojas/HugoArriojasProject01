@@ -18,19 +18,21 @@ header.blog {
         margin-bottom: 40px;
         p {
             color: $black2;
+            font-family: "Raleway", sans-serif;
             margin: 0;
         }
     }
 }
 
 // Tags section
-.tags {
-    .sectionWrapper div {
+.tags .sectionWrapper {
+    padding: 1% 0;
+    div {
         display: flex;
         align-items: center;
     }
     h3 {
-        margin: 2% 0;
+        margin: 1% 0;
     }
     p, i {
         color: $textGray;
@@ -38,30 +40,37 @@ header.blog {
     }
 }
 
+
 // Start of author section
 .author .sectionWrapper {
-    max-height: 500px;
+    max-height: 400px;
     display: flex;
     img {
         object-fit: cover;
-        height: 100%;
-        width: 100%;
-        min-width: 25%;
+        object-position: top;
+        width: 17%;
     }
     .authorTxt {
         background-color: $white;
-        max-width: 75%;
-        padding: 5%;
-        margin-left: 5%;
+        width: 76%;
+        padding: 4% 5%;
+        margin-left: 3%;
+    }
+    p {
+        margin: 0;
     }
 }
 
 // Start of related section
 .related {
+    h3 {
+        margin: 0 0 3% 0;
+    }
     ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin: 0;
         li {
         list-style-type: none;
         height: 100%;
@@ -93,6 +102,10 @@ header.blog {
     h3 {
         margin: 0 0 5% 0;
     }
+    .sectionWrapper {
+        border: none;
+        padding-bottom: 0;
+    }
     .comment{ 
         display: flex;
         margin: 2% 0;
@@ -100,14 +113,17 @@ header.blog {
             object-fit: contain;
             height: 50%;
             width: 100%;
-            max-width: 10%;
+            max-width: 7%;
         }
         .commentTxt {
             background-color: $brownGrey;
             position: relative;
             width: 85%;
-            padding: 1% 5%;
+            padding: 1% 2%;
             margin-left: 5%;
+            p {
+                color: $black;
+            }
             p:last-child{
                 font-size: 10px;
                 font-weight: bolder;
@@ -118,9 +134,9 @@ header.blog {
     .commentTxt::before {
         content: "◀";
         color: $brownGrey;
-        font-size: 20px;
+        font-size: 25px;
         position: absolute;
-        left: -15px;
+        left: -20px;
     }    
 }
 
@@ -129,6 +145,9 @@ header.blog {
 .feedback, textarea {
     .sectionWrapper{
         border: none;
+    }
+    p {
+        font-style: italic;
     }
     input, textarea {
         border: 1px $blogLine solid;

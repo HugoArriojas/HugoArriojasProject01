@@ -41,18 +41,18 @@ header.contact {
     .contactDetails {
         background-color: $white;
         width: 50%;
-        padding: 5% 15% 5% 5%;
+        padding: 4% 15% 5% 5%;
         h2 {
             margin-top: 0;
         }
         h3 {
-            margin-top: 20%;
+            margin: 10% 0 0 0;
         }
         p, a {
             color: $textGray2;
             text-decoration: none;
             display: block;
-            margin: 10% 0;
+            margin: 5% 0;
         }
         .workingHours {
             color: $black2;

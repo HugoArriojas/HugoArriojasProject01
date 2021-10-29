@@ -27,6 +27,7 @@ h1 {
 }
 
 h2 {
+    color: $black;
     font-size: 30px;
     font-family: "Raleway",sans-serif;
     font-weight: bolder;
@@ -36,12 +37,13 @@ h2 {
 
 // Decided to go with the default sizing for h3 as it matches the "body style"
 h3, h4 {
+    color: $black;
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
     letter-spacing: 0.5px;
-    margin: 5% 0 10% 0;
 }
 p {
+    color: $textGray;
     font-size: 14px;
     font-family: "Lora", serif;
     line-height: 24px;
@@ -185,18 +187,23 @@ footer {
     .footWrapper {
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        padding: 3% 0;
+        width: 60%;
+        padding: 6% 0 3% 0;
         margin: 0 auto;
     }
+    // Decided to make these divs bigger than the style guide to give the text more breathing room
     div {
-        width: 30%;
+        width: 25%;
+    }
+    h3 {
+        color: $white;
+        margin: 0 0 30% 0;
     }
     h4 {
         color: $green;
-        font-size: 28px;
+        font-size: 36px;
         font-family: "Raleway", sans-serif;
-        margin: 5% 0;
+        margin: 0 0 25% 0;
     }
     p, form {
         color: $textGray;
@@ -243,7 +250,7 @@ footer {
     padding: 1%;
     margin: 0;
     .runWrapper {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
     p{

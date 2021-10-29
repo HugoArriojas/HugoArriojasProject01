@@ -240,6 +240,7 @@ h1 {
 }
 
 h2 {
+  color: #2E2E2E;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
@@ -248,13 +249,14 @@ h2 {
 }
 
 h3, h4 {
+  color: #2E2E2E;
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
   letter-spacing: 0.5px;
-  margin: 5% 0 10% 0;
 }
 
 p {
+  color: #999999;
   font-size: 14px;
   font-family: "Lora", serif;
   line-height: 24px;
@@ -407,18 +409,22 @@ footer .footWrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 70%;
-  padding: 3% 0;
+  width: 60%;
+  padding: 6% 0 3% 0;
   margin: 0 auto;
 }
 footer div {
-  width: 30%;
+  width: 25%;
+}
+footer h3 {
+  color: #F6F6F6;
+  margin: 0 0 30% 0;
 }
 footer h4 {
   color: #64A604;
-  font-size: 28px;
+  font-size: 36px;
   font-family: "Raleway", sans-serif;
-  margin: 5% 0;
+  margin: 0 0 25% 0;
 }
 footer p, footer form {
   color: #999999;
@@ -468,7 +474,7 @@ footer .favicons a {
   margin: 0;
 }
 .runner .runWrapper {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 .runner p {
@@ -541,6 +547,7 @@ header.home {
   max-width: 50%;
 }
 .dishesContent i {
+  color: #2E2E2E;
   font-size: 25px;
   margin: 0 10%;
 }
@@ -650,6 +657,7 @@ header.home {
   bottom: 15%;
 }
 .quote p {
+  color: #2E2E2E;
   font-size: 24px;
   font-style: italic;
   line-height: 36px;
@@ -683,9 +691,13 @@ header.blog {
 }
 .pineChicken .recipeTitle p {
   color: #252525;
+  font-family: "Raleway", sans-serif;
   margin: 0;
 }
 
+.tags .sectionWrapper {
+  padding: 1% 0;
+}
 .tags .sectionWrapper div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,16 +706,16 @@ header.blog {
       -ms-flex-align: center;
           align-items: center;
 }
-.tags h3 {
-  margin: 2% 0;
+.tags .sectionWrapper h3 {
+  margin: 1% 0;
 }
-.tags p, .tags i {
+.tags .sectionWrapper p, .tags .sectionWrapper i {
   color: #999999;
   margin: 0 2%;
 }
 
 .author .sectionWrapper {
-  max-height: 500px;
+  max-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,17 +723,23 @@ header.blog {
 .author .sectionWrapper img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
-  width: 100%;
-  min-width: 25%;
+  -o-object-position: top;
+     object-position: top;
+  width: 17%;
 }
 .author .sectionWrapper .authorTxt {
   background-color: #F6F6F6;
-  max-width: 75%;
-  padding: 5%;
-  margin-left: 5%;
+  width: 76%;
+  padding: 4% 5%;
+  margin-left: 3%;
+}
+.author .sectionWrapper p {
+  margin: 0;
 }
 
+.related h3 {
+  margin: 0 0 3% 0;
+}
 .related ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,6 +748,7 @@ header.blog {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 .related ul li {
   list-style-type: none;
@@ -759,6 +778,10 @@ header.blog {
 .reviews h3 {
   margin: 0 0 5% 0;
 }
+.reviews .sectionWrapper {
+  border: none;
+  padding-bottom: 0;
+}
 .reviews .comment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,14 +793,17 @@ header.blog {
      object-fit: contain;
   height: 50%;
   width: 100%;
-  max-width: 10%;
+  max-width: 7%;
 }
 .reviews .comment .commentTxt {
   background-color: #F2F2F2;
   position: relative;
   width: 85%;
-  padding: 1% 5%;
+  padding: 1% 2%;
   margin-left: 5%;
+}
+.reviews .comment .commentTxt p {
+  color: #2E2E2E;
 }
 .reviews .comment .commentTxt p:last-child {
   font-size: 10px;
@@ -787,13 +813,16 @@ header.blog {
 .reviews .commentTxt::before {
   content: "◀";
   color: #F2F2F2;
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
-  left: -15px;
+  left: -20px;
 }
 
 .feedback .sectionWrapper, textarea .sectionWrapper {
   border: none;
+}
+.feedback p, textarea p {
+  font-style: italic;
 }
 .feedback input, .feedback textarea, textarea input, textarea textarea {
   border: 1px #E5E5E5 solid;
@@ -866,19 +895,19 @@ header.contact {
 .contactMain .contactDetails {
   background-color: #F6F6F6;
   width: 50%;
-  padding: 5% 15% 5% 5%;
+  padding: 4% 15% 5% 5%;
 }
 .contactMain .contactDetails h2 {
   margin-top: 0;
 }
 .contactMain .contactDetails h3 {
-  margin-top: 20%;
+  margin: 10% 0 0 0;
 }
 .contactMain .contactDetails p, .contactMain .contactDetails a {
   color: #666666;
   text-decoration: none;
   display: block;
-  margin: 10% 0;
+  margin: 5% 0;
 }
 .contactMain .contactDetails .workingHours {
   color: #252525;
@@ -910,6 +939,14 @@ header.contact {
   }
   .quote .fasLeft {
     left: -15%;
+  }
+
+  footer .footWrapper {
+    width: 80%;
+  }
+
+  .runner .runWrapper {
+    width: 80%;
   }
 }
 @media (max-width: 768px) {
@@ -965,13 +1002,13 @@ header.contact {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer div {
+  footer .footWrapper div {
     width: 100%;
   }
-  footer div h2, footer div h3 {
+  footer .footWrapper div h3, footer .footWrapper div h4 {
     margin: 2% 0;
   }
-  footer div p {
+  footer .footWrapper div p {
     padding: 0;
   }
   footer input, footer button {
@@ -1100,11 +1137,11 @@ header.contact {
     max-height: none;
   }
   .author .sectionWrapper .sallyLucas {
-    -o-object-position: top;
-       object-position: top;
     max-height: 200px;
+    width: 100%;
   }
   .author .sectionWrapper .authorTxt {
+    width: 100%;
     max-width: none;
     margin: 0;
   }

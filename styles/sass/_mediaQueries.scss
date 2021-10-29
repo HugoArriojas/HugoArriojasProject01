@@ -18,6 +18,13 @@
             left: -15%
         }
     }
+    // Wanted to space out the divs a bit more as the screen decreases even though this isn't in the design
+    footer .footWrapper {
+        width: 80%;
+    }
+    .runner .runWrapper {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -65,14 +72,14 @@
     footer {
         .footWrapper {
             flex-direction: column;
-        }
-        div {
-            width: 100%;
-            h2, h3 {
-                margin: 2% 0;
-            }
-            p {
-                padding: 0;
+            div {
+                width: 100%;
+                h3, h4 {
+                    margin: 2% 0;
+                }
+                p {
+                    padding: 0;
+                }
             }
         }
         input, button {
@@ -121,6 +128,7 @@
     .tags i {
         font-size: 30px;
     }
+    
     .customerInfo {
         flex-direction: column;
         input {
@@ -173,10 +181,11 @@
         flex-direction: column;
         max-height: none;
         .sallyLucas {
-            object-position: top;
             max-height: 200px;
+            width: 100%;
         }
         .authorTxt {
+            width: 100%;
             max-width: none;
             margin: 0;
         }

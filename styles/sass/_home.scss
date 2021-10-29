@@ -51,6 +51,7 @@ header.home {
     background-color: $brownGrey;
     max-width: 50%;
     i {
+        color: $black;
         font-size:25px;
         margin: 0 10%;
     }
@@ -146,6 +147,7 @@ header.home {
         bottom: 15%;
     }
     p {
+        color: $black;
         font-size: 24px;
         font-style: italic;
         line-height: 36px;
