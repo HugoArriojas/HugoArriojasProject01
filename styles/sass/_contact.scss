@@ -1,8 +1,10 @@
+// Header section
 header.contact {
     background-image: url(./assets/contact-1.jpeg);
     height: 50vh;
 }
 
+// General body styling
 .contactWrapper {
     width: 85%;
     margin-left: auto;
@@ -11,14 +13,14 @@ header.contact {
 // Start of form section
 .contactMain {
     input, textarea {
-        font-family: "Lora", serif;
-        font-size: 14px;
-        border: none;
         color: $textGray2;
         background-color: $white;
+        border: none;
+        font-size: 14px;
+        font-family: "Lora", serif;
         width: 100%;
-        margin: 2% 0;
         padding: 3%;
+        margin: 2% 0;
     }
     .contactWrapper, .contactNameEmail {
         display: flex;
@@ -28,13 +30,12 @@ header.contact {
         width: 49%;
     }
     form{
-        // width: auto;
         margin-right: 5%;
     }
     button {
-        background-color: #00000000;
         color: $green;
         padding: 3% 0;
+        background-color: #00000000;
         font-weight: bold;
     }
     .contactDetails {
@@ -50,21 +51,22 @@ header.contact {
         p, a {
             color: $textGray2;
             text-decoration: none;
-            margin: 10% 0;
             display: block;
+            margin: 10% 0;
         }
         .workingHours {
             color: $black2;
         }
         strong {
-            font-family: "Raleway", sans-serif;
             font-weight: bold;
+            font-family: "Raleway", sans-serif;
         }
     }
 }
 
+// Contact section styling
 .contactBanner {
-    width: 100%;
     object-fit: cover;
     display: block;
+    width: 100%;
 }

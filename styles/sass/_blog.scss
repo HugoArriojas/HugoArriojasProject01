@@ -1,20 +1,14 @@
-.pineChicken p, .author p {
-    color: $textGray2;
-}
-
-.sectionWrapper {
-    width: 70%;
-    margin: 0 auto;
-    padding: 3% 0;
-    border-bottom: 2px solid $blogLine;
-}
-
-// Blog header
+// Header styling
 header.blog {
     background-image: url(./assets/blog-1.jpeg);
     height: 50vh;
 }
-// recipe section
+
+// Recipe section
+
+.pineChicken p, .author p {
+    color: $textGray2;
+}
 
 .pineChicken {
     h2 {
@@ -23,14 +17,13 @@ header.blog {
     .recipeTitle {
         margin-bottom: 40px;
         p {
-            margin: 0;
             color: $black2;
+            margin: 0;
         }
     }
 }
 
 // Tags section
-
 .tags {
     .sectionWrapper div {
         display: flex;
@@ -46,39 +39,37 @@ header.blog {
 }
 
 // Start of author section
-
 .author .sectionWrapper {
-    display: flex;
     max-height: 500px;
+    display: flex;
     img {
+        object-fit: cover;
         height: 100%;
         width: 100%;
-        object-fit: cover;
         min-width: 25%;
     }
     .authorTxt {
         background-color: $white;
+        max-width: 75%;
         padding: 5%;
         margin-left: 5%;
-        max-width: 75%;
     }
 }
 
 // Start of related section
-
 .related {
     ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
         li {
+        list-style-type: none;
         height: 100%;
         width: 32%;
-        list-style-type: none;
         img {
+            object-fit: cover;
             height: 100%;
             width: 100%;
-            object-fit: cover;
         }
         h4 {
             font-size: 18px;
@@ -86,8 +77,8 @@ header.blog {
         }
         p {
             color: $textGray;
-            margin-top: 1%;
             font-size: 14px;
+            margin-top: 1%;
         }
         strong {
             color: $textGray2;
@@ -106,30 +97,30 @@ header.blog {
         display: flex;
         margin: 2% 0;
         img {
+            object-fit: contain;
             height: 50%;
             width: 100%;
             max-width: 10%;
-            object-fit: contain;
         }
         .commentTxt {
             background-color: $brownGrey;
+            position: relative;
             width: 85%;
             padding: 1% 5%;
             margin-left: 5%;
-            position: relative;
             p:last-child{
-                font-family: "Raleway",sans-serif;
-                font-weight: bolder;
                 font-size: 10px;
+                font-weight: bolder;
+                font-family: "Raleway",sans-serif;
             }
         }
     }
     .commentTxt::before {
         content: "◀";
+        color: $brownGrey;
+        font-size: 20px;
         position: absolute;
         left: -15px;
-        font-size: 20px;
-        color: $brownGrey;
     }    
 }
 
@@ -140,11 +131,11 @@ header.blog {
         border: none;
     }
     input, textarea {
-        width: 32%;
         border: 1px $blogLine solid;
-        padding: 1%;
-        font-family: "Lora", serif;
         font-size: 12px;
+        font-family: "Lora", serif;
+        width: 32%;
+        padding: 1%;
     }
     .customerInfo {
         display: flex;
@@ -161,7 +152,7 @@ header.blog {
 }
 
 
-// Start of footer
+// Footer styling
 .blogEmail {
     margin-top: 50%;
 }

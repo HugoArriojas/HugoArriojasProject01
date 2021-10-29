@@ -231,10 +231,48 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  color: #2E2E2E;
+  font-size: 46px;
+  font-weight: bolder;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  margin-top: 10%;
+  line-height: 36px;
+}
+
 h3, h4 {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
+  letter-spacing: 0.5px;
   margin: 5% 0 10% 0;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Lora", serif;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+button {
+  color: #F6F6F6;
+  background-color: #64A604;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3% 6%;
+  margin-bottom: 10%;
+}
+button a {
+  text-decoration: none;
+  color: #F6F6F6;
 }
 
 button:hover, button:focus {
@@ -242,19 +280,14 @@ button:hover, button:focus {
 }
 
 header {
-  background-size: cover;
   font-family: "Raleway", sans-serif;
+  background-size: cover;
 }
 header a {
   text-decoration: none;
 }
 header a:hover, header a:focus, header h1:hover, header h1:focus {
   color: #64A604;
-}
-
-header.home {
-  height: 95vh;
-  background-image: url(./assets/home-1.jpeg);
 }
 
 .headWrapper {
@@ -268,46 +301,38 @@ header.home {
           justify-content: space-between;
 }
 
-h1 {
-  color: #2E2E2E;
-  font-size: 33px;
-  font-weight: bolder;
-  line-height: 24px;
-  letter-spacing: 1.1px;
-}
-
 nav {
   width: 50%;
   margin-top: 15px;
 }
 nav ul {
+  font-size: 14px;
+  font-weight: bold;
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 14px;
-  font-weight: bold;
-  list-style-type: none;
 }
 nav a {
-  text-decoration: none;
   color: #2E2E2E;
+  text-decoration: none;
 }
 nav a:hover, nav a:focus {
   color: #A2006D;
 }
 
 .menu {
-  display: none;
   color: #2E2E2E;
-  font-size: 30px;
   border-top: 3px solid #2E2E2E;
   border-bottom: 3px solid #2E2E2E;
-  padding: 5px 0;
-  width: 125px;
   text-align: center;
+  font-size: 30px;
+  display: none;
+  width: 125px;
+  padding: 5px 0;
 }
 
 .menucontent {
@@ -324,15 +349,15 @@ nav a:hover, nav a:focus {
   display: block;
 }
 .menu:hover a, .menu:focus a, .menu:focus-within a {
-  display: block;
-  margin: 5px 0;
-  padding: 6%;
-  min-width: 125px;
-  font-size: 20px;
-  text-align: left;
   color: #2E2E2E;
   background-color: #F6F6F6;
   border: 2px solid #2E2E2E;
+  font-size: 20px;
+  text-align: left;
+  display: block;
+  min-width: 125px;
+  margin: 5px 0;
+  padding: 6%;
 }
 .menu:hover a:hover, .menu:hover a:focus, .menu:focus a:hover, .menu:focus a:focus, .menu:focus-within a:hover, .menu:focus-within a:focus {
   color: #A2006D;
@@ -346,14 +371,14 @@ span {
   position: relative;
 }
 .shopping p {
+  color: #F6F6F6;
+  background-color: #64A604;
+  border-radius: 50%;
   font-size: 8px;
+  line-height: 15px;
   position: absolute;
   right: -8px;
   bottom: -8px;
-  border-radius: 50%;
-  color: #F6F6F6;
-  background-color: #64A604;
-  line-height: 15px;
   padding: 0px 5px;
   margin: 0;
 }
@@ -364,12 +389,105 @@ section {
   display: flex;
 }
 
+.sectionWrapper {
+  border-bottom: 2px solid #E5E5E5;
+  width: 70%;
+  padding: 3% 0;
+  margin: 0 auto;
+}
+
+footer {
+  color: #F6F6F6;
+  background-color: #2E2E2E;
+}
+footer .footWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  padding: 3% 0;
+  margin: 0 auto;
+}
+footer div {
+  width: 30%;
+}
+footer h4 {
+  color: #64A604;
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  margin: 5% 0;
+}
+footer p, footer form {
+  color: #999999;
+  border-bottom: 1px solid #474747;
+  font-size: 13px;
+  padding-bottom: 5%;
+}
+footer p:last-child {
+  border: none;
+}
+footer .subscribeParagraph {
+  border: none;
+}
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer input {
+  color: #999999;
+  background-color: #535353;
+  border: none;
+  font-style: italic;
+  font-family: "Lora", serif;
+  height: 100%;
+  width: 75%;
+  padding: 4% 6%;
+}
+footer button {
+  width: 25%;
+  padding: 3.4%;
+}
+footer .favicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .favicons a {
+  color: #F6F6F6;
+  margin: 20%;
+}
+
+.runner {
+  color: #EEF6D1;
+  background-color: #252525;
+  padding: 1%;
+  margin: 0;
+}
+.runner .runWrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+.runner p {
+  color: #999999;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+header.home {
+  height: 95vh;
+  background-image: url(./assets/home-1.jpeg);
+}
+
 .recipe, .dishes {
   max-height: 1100px;
 }
 
 .recipeContent {
-  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,10 +497,10 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 50%;
 }
 
 .recipeWrapper {
-  width: 80%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,41 +512,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-h2 {
-  margin-top: 10%;
-  font-size: 30px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
-  line-height: 36px;
+  width: 80%;
 }
 
 .line {
+  border-top: #64A604 solid 4px;
   width: 15%;
   margin: 0 auto;
-  border-top: #64A604 solid 4px;
-}
-
-p {
-  font-family: "Lora", serif;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.3px;
-}
-
-button {
-  background-color: #64A604;
-  color: #F6F6F6;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3% 6%;
-  margin-bottom: 10%;
-}
-button a {
-  text-decoration: none;
-  color: #F6F6F6;
 }
 
 .recipeImg {
@@ -436,19 +526,19 @@ button a {
 }
 
 .foodImg {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .dishesContent {
-  max-width: 50%;
   background-color: #F2F2F2;
+  max-width: 50%;
 }
 .dishesContent i {
-  margin: 0 10%;
   font-size: 25px;
+  margin: 0 10%;
 }
 .dishesContent ul {
   display: -webkit-box;
@@ -459,28 +549,32 @@ button a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
-  padding: 5%;
   height: 100%;
   min-height: 530px;
+  padding: 5%;
+  margin: 0;
 }
 .dishesContent li {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
 }
 .dishesContent h3 {
   margin: 0;
 }
 .dishesContent p {
-  font-family: "Lora", serif;
   font-size: 14px;
+  font-family: "Lora", serif;
   line-height: 24px;
   letter-spacing: 0.3px;
 }
 
 .restaurants {
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -491,7 +585,6 @@ button a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
 }
 
 .restoWrapper {
@@ -509,8 +602,8 @@ button a {
 }
 
 .circleLogo {
-  position: absolute;
   width: 20%;
+  position: absolute;
   top: -30%;
   right: 10%;
 }
@@ -525,11 +618,11 @@ button a {
 
 .testimonial {
   background-color: #DDED9A;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .testimonialWrapper {
@@ -541,19 +634,22 @@ button a {
   position: relative;
 }
 .quote .fas {
-  position: absolute;
   color: #EEF6D1;
-  font-size: 30px;
+  font-size: 40px;
+  position: absolute;
 }
 .quote .fasLeft {
-  left: -5%;
+  left: -8%;
 }
 .quote .fasRight {
-  right: -5%;
+  right: -8%;
   bottom: 15%;
 }
 .quote p {
+  font-size: 24px;
   font-style: italic;
+  line-height: 36px;
+  letter-spacing: 0.6px;
 }
 
 .fa-chevron-left {
@@ -566,102 +662,13 @@ button a {
   margin: 3%;
 }
 
-footer {
-  color: #F6F6F6;
-  background-color: #2E2E2E;
-}
-footer .footWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-  padding: 3% 0;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer div {
-  width: 30%;
-}
-footer h4 {
-  color: #64A604;
-  font-family: "Raleway", sans-serif;
-  font-size: 28px;
-  margin: 5% 0;
-}
-footer p, footer form {
-  border-bottom: 1px solid #474747;
-  color: #999999;
-  padding-bottom: 5%;
-  font-size: 12px;
-}
-footer p:last-child {
-  border: none;
-}
-footer .subscribeParagraph {
-  border: none;
-}
-footer form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-footer input {
-  background-color: #535353;
-  border: none;
-  color: #999999;
-  height: 100%;
-  font-family: "Lora", serif;
-  font-style: italic;
-  padding: 4% 6%;
-  width: 75%;
-}
-footer button {
-  width: 25%;
-  padding: 3.4%;
-}
-footer .favicons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-footer .favicons a {
-  color: #F6F6F6;
-  margin: 20%;
-}
-
-.runner {
-  background-color: #252525;
-  color: #EEF6D1;
-  margin: 0;
-  padding: 1%;
-}
-.runner .runWrapper {
-  width: 70%;
-  margin: 0 auto;
-}
-.runner p {
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
-  color: #999999;
-  margin: 0;
+header.blog {
+  background-image: url(./assets/blog-1.jpeg);
+  height: 50vh;
 }
 
 .pineChicken p, .author p {
   color: #666666;
-}
-
-.sectionWrapper {
-  width: 70%;
-  margin: 0 auto;
-  padding: 3% 0;
-  border-bottom: 2px solid #E5E5E5;
-}
-
-header.blog {
-  background-image: url(./assets/blog-1.jpeg);
-  height: 50vh;
 }
 
 .pineChicken h2 {
@@ -671,8 +678,8 @@ header.blog {
   margin-bottom: 40px;
 }
 .pineChicken .recipeTitle p {
-  margin: 0;
   color: #252525;
+  margin: 0;
 }
 
 .tags .sectionWrapper div {
@@ -692,23 +699,23 @@ header.blog {
 }
 
 .author .sectionWrapper {
+  max-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 500px;
 }
 .author .sectionWrapper img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
+  width: 100%;
   min-width: 25%;
 }
 .author .sectionWrapper .authorTxt {
   background-color: #F6F6F6;
+  max-width: 75%;
   padding: 5%;
   margin-left: 5%;
-  max-width: 75%;
 }
 
 .related ul {
@@ -721,15 +728,15 @@ header.blog {
   padding: 0;
 }
 .related ul li {
+  list-style-type: none;
   height: 100%;
   width: 32%;
-  list-style-type: none;
 }
 .related ul li img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .related ul li h4 {
   font-size: 18px;
@@ -737,8 +744,8 @@ header.blog {
 }
 .related ul li p {
   color: #999999;
-  margin-top: 1%;
   font-size: 14px;
+  margin-top: 1%;
 }
 .related ul li strong {
   color: #666666;
@@ -755,41 +762,41 @@ header.blog {
   margin: 2% 0;
 }
 .reviews .comment img {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 50%;
   width: 100%;
   max-width: 10%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .reviews .comment .commentTxt {
   background-color: #F2F2F2;
+  position: relative;
   width: 85%;
   padding: 1% 5%;
   margin-left: 5%;
-  position: relative;
 }
 .reviews .comment .commentTxt p:last-child {
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
   font-size: 10px;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
 }
 .reviews .commentTxt::before {
   content: "◀";
+  color: #F2F2F2;
+  font-size: 20px;
   position: absolute;
   left: -15px;
-  font-size: 20px;
-  color: #F2F2F2;
 }
 
 .feedback .sectionWrapper, textarea .sectionWrapper {
   border: none;
 }
 .feedback input, .feedback textarea, textarea input, textarea textarea {
-  width: 32%;
   border: 1px #E5E5E5 solid;
-  padding: 1%;
-  font-family: "Lora", serif;
   font-size: 12px;
+  font-family: "Lora", serif;
+  width: 32%;
+  padding: 1%;
 }
 .feedback .customerInfo, textarea .customerInfo {
   display: -webkit-box;
@@ -823,14 +830,14 @@ header.contact {
 }
 
 .contactMain input, .contactMain textarea {
-  font-family: "Lora", serif;
-  font-size: 14px;
-  border: none;
   color: #666666;
   background-color: #F6F6F6;
+  border: none;
+  font-size: 14px;
+  font-family: "Lora", serif;
   width: 100%;
-  margin: 2% 0;
   padding: 3%;
+  margin: 2% 0;
 }
 .contactMain .contactWrapper, .contactMain .contactNameEmail {
   display: -webkit-box;
@@ -847,9 +854,9 @@ header.contact {
   margin-right: 5%;
 }
 .contactMain button {
-  background-color: #00000000;
   color: #64A604;
   padding: 3% 0;
+  background-color: #00000000;
   font-weight: bold;
 }
 .contactMain .contactDetails {
@@ -866,22 +873,22 @@ header.contact {
 .contactMain .contactDetails p, .contactMain .contactDetails a {
   color: #666666;
   text-decoration: none;
-  margin: 10% 0;
   display: block;
+  margin: 10% 0;
 }
 .contactMain .contactDetails .workingHours {
   color: #252525;
 }
 .contactMain .contactDetails strong {
-  font-family: "Raleway", sans-serif;
   font-weight: bold;
+  font-family: "Raleway", sans-serif;
 }
 
 .contactBanner {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  width: 100%;
 }
 
 @media (max-width: 1100px) {
@@ -913,23 +920,23 @@ header.contact {
     height: 60%;
   }
   .headWrapper .mainTitle {
-    background-color: #F6F6F6;
-    padding: 1% 3%;
     border: 2px solid #2E2E2E;
+    background-color: #F6F6F6;
     -ms-flex-item-align: center;
         align-self: center;
+    padding: 1% 3%;
   }
   .headWrapper h1 {
-    text-align: center;
     font-size: 42px;
+    text-align: center;
     height: 100%;
     width: 100%;
   }
   .headWrapper nav {
+    justify-self: center;
+    height: 10%;
     width: 20%;
     margin: 0 auto;
-    height: 10%;
-    justify-self: center;
   }
 
   .menu {
@@ -976,8 +983,8 @@ header.contact {
             justify-content: space-evenly;
   }
   footer .favicons a {
-    margin: 5%;
     font-size: 30px;
+    margin: 5%;
   }
 
   .recipe {
@@ -996,8 +1003,8 @@ header.contact {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    max-height: 400px;
     width: 100%;
+    max-height: 400px;
   }
 
   .dishes {
@@ -1032,8 +1039,8 @@ header.contact {
   }
   .customerInfo input {
     width: 100%;
-    margin: 1% 0;
     padding: 3%;
+    margin: 1% 0;
   }
 
   .blogEmail {
@@ -1050,8 +1057,8 @@ header.contact {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
   .contactMain .contactWrapper h2, .contactMain .contactWrapper h3, .contactMain .contactWrapper p, .contactMain .contactWrapper a, .contactMain .contactWrapper button {
     margin: 3% 0;
@@ -1076,9 +1083,9 @@ header.contact {
     width: 100%;
   }
   .related ul li img {
-    display: block;
     -o-object-fit: contain;
        object-fit: contain;
+    display: block;
   }
 
   .author .sectionWrapper {
@@ -1089,9 +1096,9 @@ header.contact {
     max-height: none;
   }
   .author .sectionWrapper .sallyLucas {
-    max-height: 200px;
     -o-object-position: top;
        object-position: top;
+    max-height: 200px;
   }
   .author .sectionWrapper .authorTxt {
     max-width: none;
@@ -1103,8 +1110,8 @@ header.contact {
     max-height: none;
   }
   .dishes .dishesContent i {
-    margin-right: 0;
     font-size: 20px;
+    margin-right: 0;
   }
 
   .gallery {
