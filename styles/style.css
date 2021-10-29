@@ -805,10 +805,10 @@ header.blog {
   padding: 1% 2%;
   margin-left: 5%;
 }
-.reviews .comment .commentTxt p {
+.reviews .comment p {
   color: #2E2E2E;
 }
-.reviews .comment .commentTxt p:last-child {
+.reviews .comment p:last-child {
   font-size: 10px;
   font-weight: bolder;
   font-family: "Raleway", sans-serif;
@@ -1008,10 +1008,10 @@ header.contact {
   footer .footWrapper div {
     width: 100%;
   }
-  footer .footWrapper div h3, footer .footWrapper div h4 {
+  footer .footWrapper h3, footer .footWrapper h4 {
     margin: 2% 0;
   }
-  footer .footWrapper div p {
+  footer .footWrapper p {
     padding: 0;
   }
   footer input, footer button {

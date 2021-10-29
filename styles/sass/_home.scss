@@ -4,10 +4,12 @@ header.home {
     background-image: url(./assets/home-1.jpeg);
 }
 
+
 // Start of main content
 .recipe, .dishes {
     max-height: 1100px;
 }
+
 
 // Start of recipe section
 .recipeContent {
@@ -41,8 +43,8 @@ header.home {
     width: 100%;
 }
 
-// Start of dishes section
 
+// Start of dishes section
 .dishesImg {
     overflow: hidden;
 }
@@ -113,6 +115,7 @@ header.home {
     right: 10%;
 }
 
+
 // Start of gallery section
 .gallery {
     display: grid;
@@ -122,13 +125,13 @@ header.home {
     }
 }
 
+
 // Start of testimonials section
 .testimonial {
     background-color: $green2;
     text-align: center;
     flex-direction: column;
 }
-
 
 .testimonialWrapper {
     width: 64%;

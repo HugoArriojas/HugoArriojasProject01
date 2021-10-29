@@ -35,8 +35,8 @@ h2 {
     line-height: 36px;
 }
 
-// Decided to go with the default sizing for h3 as it matches the "body style"
 h3, h4 {
+    // Decided to go with the default sizing for h3 as it matches the "body style"
     color: $black;
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
@@ -67,6 +67,7 @@ button {
 button:hover, button:focus {
     background-color: $purple;
 }
+
 
 // header styling
 header {
@@ -123,8 +124,8 @@ nav {
     top: 1000px;
 }
 
-// Note: need to use jQuery in order to make this accessible by mobile by including a click listening event
 .menu:hover, .menu:focus, .menu:focus-within {
+    // Note: Would like to use jQuery in order to make this accessible by mobile by including a click listening event
     color: $green;
     z-index: 10;
     .menuContent {
@@ -179,8 +180,8 @@ section {
     margin: 0 auto;
 }
 
-// Start of footer section
 
+// Start of footer section
 footer {
     color: $white;
     background-color: $black;
@@ -242,6 +243,7 @@ footer {
         margin: 20%;
     }
 }
+
 
 // Runner styling
 .runner {
