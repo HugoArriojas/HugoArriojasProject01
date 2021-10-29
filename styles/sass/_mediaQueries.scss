@@ -27,7 +27,7 @@
         height: 60%;
         .mainTitle {
             background-color: $white;
-            padding: 2%;
+            padding: 1% 3%;
             border: 2px solid $black;
             align-self: center;
         }
@@ -51,21 +51,41 @@
         display: none;
     }
 
+    // General body styling
+    h2, h3 {
+        margin: 5% 0;
+    }
+
     .sectionWrapper, .restoWrapper, .runner .runWrapper, footer .footWrapper {
         width: 85%;
     }
 
     // General footer styling
     footer {
-        h3, h4 {
-            font-size: 18px;
-        }
-        form {
+        .footWrapper {
             flex-direction: column;
-            input, button {
-                width: 100%;
-                padding: 4%;
-                margin-bottom: 4%;
+        }
+        div {
+            width: 100%;
+            h2, h3 {
+                margin: 2% 0;
+            }
+            p {
+                padding: 0;
+            }
+        }
+        input, button {
+            font-size: 14px;
+        }
+        button {
+            padding: 4.2%;
+            margin: 0;
+        }
+        .favicons {
+            justify-content: space-evenly;
+            a {
+                margin: 5%;
+                font-size: 30px;
             }
         }
     }
@@ -95,11 +115,29 @@
             max-height: 400px;
         }
     }
+
+    // Start of Blog page styling
+    .tags i {
+        font-size: 30px;
+    }
+
+    .customerInfo {
+        flex-direction: column;
+        input {
+            width: 100%;
+            margin: 1% 0;
+            padding: 3%;
+        }
+    }
+
+    .blogEmail {
+        margin-top: 0
+    }
+
     // Start of Contact page styling
     .contactMain {
         justify-content: center;
 
-    
     .contactWrapper{
         flex-direction: column;
         margin: 0;
@@ -119,31 +157,37 @@
 }
 }
 
-@media (max-width: 490px) {
-    // General footer styling
-    footer {
-        .footWrapper {
-            flex-direction: column;
-        }
-        div {
+@media (max-width: 600px) {
+    // Blog page styling
+
+    .related ul {
+        flex-direction: column;
+        li {
             width: 100%;
-            h2, h3 {
-                margin: 2% 0;
-            }
-            p {
-                padding: 0;
-            }
-        }
-        .favicons {
-            justify-content: space-evenly;
-            a {
-                margin: 5%;
-                font-size: 30px;
+            img {
+                display: block;
+                object-fit: contain;
             }
         }
     }
-    
+    .author .sectionWrapper {
+        flex-direction: column;
+        max-height: none;
+        .sallyLucas {
+            max-height: 200px;
+            object-position: top;
+        }
+        .authorTxt {
+            max-width: none;
+            margin: 0;
+        }
+    }
 
+}
+
+
+@media (max-width: 490px) {
+  
     // Home page styling
     .dishes {
         max-height: none;
