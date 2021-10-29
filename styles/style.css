@@ -597,6 +597,9 @@ header.home {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.restaurants h2 {
+  margin: 5% 0 2% 0;
+}
 
 .restoWrapper {
   width: 60%;
