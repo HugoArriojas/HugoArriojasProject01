@@ -77,9 +77,9 @@
         }
         input, button {
             font-size: 14px;
+            height: 50px;
         }
         button {
-            padding: 4.2%;
             margin: 0;
         }
         .favicons {
@@ -121,7 +121,6 @@
     .tags i {
         font-size: 30px;
     }
-
     .customerInfo {
         flex-direction: column;
         input {

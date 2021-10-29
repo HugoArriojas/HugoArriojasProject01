@@ -39,10 +39,14 @@ header.home {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    display: block;
 }
 
 // Start of dishes section
+
+.dishesImg {
+    overflow: hidden;
+}
+
 .dishesContent {
     background-color: $brownGrey;
     max-width: 50%;
