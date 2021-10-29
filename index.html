@@ -8,7 +8,8 @@
     <script src="https://kit.fontawesome.com/06c705b05c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Delicious - Home</title>
 </head>
@@ -16,9 +17,16 @@
 <body>
     <header class="home">
         <div class="headWrapper">
-            <a href="#" class="mainTitle"><h1> DELICIOUS</h1></a>
+            <a href="#" class="mainTitle">
+                <h1> DELICIOUS</h1>
+            </a>
             <nav>
                 <ul>
+                    <li><a href="./index.html"><span>HOME</span></a></li>
+                    <li><a href="./index.html#about">ABOUT</a></li>
+                    <li><a href="./index.html#recipes">RECIPES</a></li>
+                    <li><a href="./index.html#dishes">NUTRITION</a></li>
+                    <!-- Hidden menu added in the middle of nav due to centering issues -->
                     <li class="menu">MENU
                         <div class="menuContent">
                             <a href="./index.html"><span>HOME</span></a>
@@ -32,10 +40,6 @@
                             <a href="#">SEARCH</a>
                         </div>
                     </li>
-                    <li><a href="./index.html"><span>HOME</span></a></li>
-                    <li><a href="./index.html#about">ABOUT</a></li>
-                    <li><a href="./index.html#recipes">RECIPES</a></li>
-                    <li><a href="./index.html#dishes">NUTRITION</a></li>
                     <li><a href="./blog.html">BLOG</a></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="./contact.html">CONTACT</a></li>
@@ -48,9 +52,8 @@
             </nav>
         </div>
     </header>
+
     <main>
-
-
         <section class="recipe" id="recipes">
             <div class="recipeContent">
                 <div class="recipeWrapper">
@@ -68,19 +71,20 @@
                 </div>
             </div>
             <div class="recipeImg">
-                <img src="./styles/assets/home-2.jpeg" alt="Overhead view of a bowl of purple and green lettuce" class="foodImg">
+                <img src="./styles/assets/home-2.jpeg" alt="Overhead view of a bowl of purple and green lettuce"
+                    class="foodImg">
             </div>
         </section>
 
-
         <section class="dishes" id="dishes">
             <div class="dishesImg">
-                <img src="./styles/assets/home-3.jpeg" alt="Close up view of carne asada taco with lime wedges" class="foodImg">
+                <img src="./styles/assets/home-3.jpeg" alt="Close up view of carne asada taco with lime wedges"
+                    class="foodImg">
             </div>
             <div class="dishesContent">
                 <ul>
                     <li>
-                        <i class="fas fa-lemon"></i>
+                        <i class="fas fa-lemon" aria-label="Icon of a lemon"></i>
                         <div class="recipes">
                             <h3>VEGETARIAN</h3>
                             <p>
@@ -90,7 +94,7 @@
                         </div>
                     </li>
                     <li>
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-utensils" aria-label="Icon of a knife & fork"></i>
                         <div class="recipes">
                             <h3>APPETIZERS</h3>
                             <p>
@@ -100,7 +104,7 @@
                         </div>
                     </li>
                     <li>
-                        <i class="fas fa-coffee"></i>
+                        <i class="fas fa-coffee" aria-label="Icon of a coffee cup"></i>
                         <div class="recipes">
                             <h3>DESSERTS</h3>
                             <p>
@@ -110,7 +114,7 @@
                         </div>
                     </li>
                     <li>
-                        <i class="fas fa-glass-martini"></i>
+                        <i class="fas fa-glass-martini" aria-label="Icon of a martini glass"></i>
                         <div class="recipes">
                             <h3>DRINKS</h3>
                             <p>
@@ -120,7 +124,7 @@
                         </div>
                     </li>
                     <li>
-                        <i class="fas fa-leaf"></i>
+                        <i class="fas fa-leaf" aria-label="Icon of a leaf"></i>
                         <div class="recipes">
                             <h3>SALADS</h3>
                             <p>
@@ -130,7 +134,7 @@
                         </div>
                     </li>
                     <li>
-                        <i class="fas fa-utensil-spoon"></i>
+                        <i class="fas fa-utensil-spoon" aria-label="Icon of a spoon"></i>
                         <div class="recipes">
                             <h3>SIDE DISHES</h3>
                             <p>
@@ -145,22 +149,27 @@
 
         <section class="restaurants" id="about">
             <div class="restoWrapper">
-            <div class="restoImg">
-                <img src="./styles/assets/home-circle-text.png" alt="Circular logo of 'Yummm a fancy food place - food' in magenta" class="circleLogo">
-                <img src="./styles/assets/home-4.jpeg" alt="view of brightly lit concrete-walled restaurant with orange tables and chairs" class="resto">
-            </div>
-            <h2>OUR RESTAURANTS</h2>
-            <div class="line"></div>
-            <p>
-                Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsol pea sprouts fava bean
-                collard
-                greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
-            </p>
+                <div class="restoImg">
+                    <img src="./styles/assets/home-circle-text.png"
+                        alt="Circular logo of 'Yummm a fancy food place - food' in magenta" class="circleLogo">
+                    <img src="./styles/assets/home-4.jpeg"
+                        alt="view of brightly lit concrete-walled restaurant with orange tables and chairs"
+                        class="resto">
+                </div>
+                <h2>OUR RESTAURANTS</h2>
+                <div class="line"></div>
+                <p>
+                    Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsol pea sprouts fava
+                    bean
+                    collard
+                    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+                </p>
             </div>
         </section>
 
         <section class="gallery">
-            <img src="./styles/assets/home-5.jpeg" alt="Overhead view of food with seeds, parsley, tomatoes, and other veggies & herbs">
+            <img src="./styles/assets/home-5.jpeg"
+                alt="Overhead view of food with seeds, parsley, tomatoes, and other veggies & herbs">
             <img src="./styles/assets/home-6.jpeg" alt="Side view of 'green' burger with onions and choves on a plate">
             <img src="./styles/assets/home-7.jpeg" alt="Close up bottom view of a bunch of radishes">
             <img src="./styles/assets/home-8.jpeg" alt="Pink cake with fake succulent decorations on top">
@@ -170,65 +179,69 @@
 
         <section class="testimonial">
             <div class="testimonialWrapper">
-            <h2>HUNGRY CLIENTS</h2>
-            <div class="quote">
-                <i class="fas fasLeft fa-quote-left"></i>
-                <p>
-                    Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water
-                    spinach arugula pea tatsoi aubergine spring onion bus tomato kale radicchio turnip chicory salsify
-                    pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion
-                </p>
-                <i class=" fas fasRight fa-quote-right"></i>
-            </div>
-            <div>
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
-            </div>
+                <h2>HUNGRY CLIENTS</h2>
+                <div class="quote">
+                    <i class="fas fasLeft fa-quote-left" aria-label="Icon of a opening quotation mark"></i>
+                    <p>
+                        Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water
+                        spinach arugula pea tatsoi aubergine spring onion bus tomato kale radicchio turnip chicory
+                        salsify
+                        pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion
+                    </p>
+                    <i class=" fas fasRight fa-quote-right" aria-label="Icon of a closing quotation mark"></i>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-left" aria-label="Chevron pointing left"></i>
+                    <i class="fas fa-chevron-right" aria-label="Chevron pointing right"></i>
+                </div>
             </div>
         </section>
     </main>
 
-
     <footer>
-        <div class="footWrapper">  
-        <div class="delicious">
-            <h4>DELICIOUS</h4>
-            <p>
-                Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels
-                sprout cabbage.
-            </p>
-            <p>A delicious restaurant</br>
-                Toronto, Ontario
-            </p>
-            <p>yum@food.com</p>
-            <p>+1 234 567 8910</p>
-        </div>
-        <div class="recentPosts">
-            <h3>RECENT POSTS</h3>
-            <p>Beetroot water spinach okra water</p>
-            <p>Chestnut ricebean pea catsear courgette</p>
-            <p>Summer purslane spinach arugula pea</p>
-            <p>Tatsol aubergine spring onion bush</p>
-            <p>Tomato kaale radicchio turnip chicory</p>
-            <p>Salsify pea sprouts faca bean</p>
-        </div>
-        <div class="subscribe">
-            <h3>SUBSCRIBE NOW</h3>
-            <p class="subscribeParagraph">
-                Get all of our newest recipes immediately in your inbox!
-            </p>
-            <form>
-                <input type="email" name="email" id="emailInput" placeholder="Enter your email">
-                <button type="submit" name="email"><i class="fas fa-long-arrow-alt-right"></i></button>
-            </form>
-            <div class="favicons">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <div class="footWrapper">
+            <div class="delicious">
+                <h4>DELICIOUS</h4>
+                <p>
+                    Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
+                    brussels
+                    sprout cabbage.
+                </p>
+                <p>A delicious restaurant</br>
+                    Toronto, Ontario
+                </p>
+                <p>yum@food.com</p>
+                <p>+1 234 567 8910</p>
+            </div>
+            <div class="recentPosts">
+                <h3>RECENT POSTS</h3>
+                <p>Beetroot water spinach okra water</p>
+                <p>Chestnut ricebean pea catsear courgette</p>
+                <p>Summer purslane spinach arugula pea</p>
+                <p>Tatsol aubergine spring onion bush</p>
+                <p>Tomato kaale radicchio turnip chicory</p>
+                <p>Salsify pea sprouts faca bean</p>
+            </div>
+            <div class="subscribe">
+                <h3>SUBSCRIBE NOW</h3>
+                <p class="subscribeParagraph">
+                    Get all of our newest recipes immediately in your inbox!
+                </p>
+                <form>
+                    <input type="email" name="email" id="emailInput" placeholder="Enter your email">
+                    <button type="submit" name="email"><i class="fas fa-long-arrow-alt-right"
+                            aria-label="Arrow pointing right"></i></button>
+                </form>
+                <div class="favicons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" aria-label="Facebook Icon"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter" aria-label="Twitter Icon"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"
+                            aria-label="Instagram Icon"></i></a>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
+
     <div class="runner">
         <div class="runWrapper">
             <p>
@@ -236,9 +249,6 @@
             </p>
         </div>
     </div>
-    <!-- 
-    cd C:\Users\ugohe\OneDrive\Desktop\Juno\Bootcamp\Project01\Project01GitRepo 
--->
 </body>
 
 </html>
