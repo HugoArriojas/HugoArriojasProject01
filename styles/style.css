@@ -1071,6 +1071,10 @@ header.contact {
     max-height: 400px;
   }
 
+  .gallery {
+    display: none;
+  }
+
   .tags i {
     font-size: 30px;
   }
