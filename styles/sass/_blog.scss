@@ -112,7 +112,7 @@ header.blog {
     .comment{ 
         display: flex;
         margin: 2% 0;
-        img {
+        img{
             object-fit: contain;
             height: 50%;
             width: 100%;
@@ -141,6 +141,15 @@ header.blog {
         position: absolute;
         left: -20px;
     }    
+}
+
+// Start of dynamic reviews section
+.dynamicComment {
+    padding: 0;
+
+    h4 {
+        margin: 0;
+    }
 }
 
 

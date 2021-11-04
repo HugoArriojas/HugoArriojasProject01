@@ -196,6 +196,10 @@
                         <p>Jul 17,2015 at 15 hours ago</p>
                     </div>
                 </div>
+
+                <ul class="dynamicComment">
+                    <!-- Comments to be dynamically added here -->
+                </ul>
             </div>
         </section>
 
@@ -203,17 +207,17 @@
             <div class="sectionWrapper">
                 <h3>LEAVE A COMMENT</h3>
                 <p>Your email address will not be published. Required fields are marked *</p>
-                <form action="submit">
+                <form action="submit" class="leaveComment">
                     <div class="customerInfo">
                         <label for="name" class="srOnly">Please enter your name (required)</label>
                         <input type="text" placeholder="Name *" id="name">
-                        <label for="email" class="srOnly">Pleas enter your email (required)</label>
+                        <label for="email" class="srOnly">Please enter your email (required)</label>
                         <input type="email" placeholder="Email *" id="email">
                         <label for="website" class="srOnly">Please enter your website</label>
                         <input type="text" placeholder="Your Website" id="website">
                     </div>
-                    <label for="comment" class="srOnly">Please enter your comment</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <label for="comment" class="srOnly">Please enter your comment (required)</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment *"></textarea>
                     <button type="submit">SUBMIT COMMENT</button>
                 </form>
             </div>
@@ -263,6 +267,58 @@
             </p>
         </div>
     </div>
+
+<script>
+    // obtain text from text box
+    formEl = document.querySelector("form.leaveComment");
+
+    // Stop page from refreshing
+    formEl.addEventListener("submit", function (e) {
+      e.preventDefault();
+      // retrieve the item from the input box
+      const userName = document.querySelector("input#name").value;
+      const userComment = document.querySelector("textarea#comment").value;
+
+      // Check if there is an item in the box
+      if (userName && userComment) {
+        // put the item into the list
+        const entryContainer = document.createElement("li");
+        entryContainer.classList.add("comment");
+        // display check box <i class='far fa-square'></i>
+        entryContainer.innerHTML = " <img src='./styles/assets/home-circle-text.png' alt='Circular logo of Yummm a fancy food place - food in magenta'>"
+        
+        const entry = document.createElement("div");
+        entry.classList.add("commentTxt");
+        entryContainer.appendChild(entry);
+
+        
+        // Display the text from the text box
+        const nameEl = document.createElement("h4");
+        const commentEl = document.createElement("p");
+        nameEl.textContent = userName;
+        commentEl.textContent = userComment;
+        
+        // NOTE: NO QUOTATIONS
+        entry.appendChild(nameEl);
+        entry.appendChild(commentEl);
+         
+
+
+        // This appends it to the ul
+        const blankList = document.querySelector("ul.dynamicComment");
+        blankList.appendChild(entryContainer);
+
+        // Clear the input field
+        // document.querySelector("input").value = "";
+      }
+
+    })
+    
+    
+
+
+</script>
+
 </body>
 
 </html>
