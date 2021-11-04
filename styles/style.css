@@ -824,9 +824,6 @@ header.blog {
 .dynamicComment {
   padding: 0;
 }
-.dynamicComment h4 {
-  margin: 0;
-}
 
 .feedback .sectionWrapper, textarea .sectionWrapper {
   border: none;
