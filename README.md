@@ -1,4 +1,4 @@
-# deliciousPSDConversion
+# Delicious PSD Conversion
 
 This was one of the first PSD conversions that I was responsible for at Juno College.
 
